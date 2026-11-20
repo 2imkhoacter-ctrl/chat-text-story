@@ -1,0 +1,13 @@
+node_modules/
+.venv*/
+*.mp4
+*.mov
+*.wav
+*.mp3
+*.MP3
+*.png
+*.jpg
+*.jpeg
+.env
+.env.*
+__pycache__/

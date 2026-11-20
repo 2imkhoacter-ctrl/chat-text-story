@@ -1,0 +1,205 @@
+CHAT TEXT STORY AI — BÀN GIAO ONE PROMPT V2
+
+1. HỆ THỐNG NÀY DÙNG ĐỂ LÀM GÌ
+
+Người dùng sản xuất video dọc dạng câu chuyện chat. Ảnh chụp đoạn chat được reveal từng tin/bubble trên nền gameplay; âm thanh gồm TTS từ CapCut, SFX được chỉ định, audio gameplay và nhạc nền. Hệ thống dùng Remotion và Generic Engine V1 tại:
+
+D:\ChatTextStory_AI\POC_01
+
+Video 03, Video 04, Golden Master và Video 05 đã duyệt là chỉ đọc đối với công việc chuẩn hóa. Không lấy số lượng, tọa độ, pause, cue, gain hoặc media riêng của các video này làm template cho video mới.
+
+TRẠNG THÁI ACCEPTED / FROZEN — DO NOT MODIFY: cây Inspector tiếng Việt, schema/Props, Bubble Mask Y, Pause After, Screenshot Y Offset, logic TTS/SFX/timeline/metadata. Codex không tự tắt, đổi tên, thêm chức năng, refactor hoặc ghi đè Props. Người dùng vẫn được chỉnh các giá trị Inspector như hiện tại.
+
+2. PHÂN CÔNG
+
+- Người dùng: cung cấp kịch bản, screenshot, CapCut draft/TTS, gameplay, nhạc, SFX và quyết định sáng tạo.
+- ChatGPT: hỏi/thu thập phần còn thiếu, viết đúng một prompt đầy đủ có một khối JSON `one-prompt` version 1.
+- Codex: xác minh nguồn, tạo workspace mới, build/validate bằng engine có sẵn và mở đúng episode trong Remotion Studio.
+- Người dùng: xem, chỉnh Inspector, duyệt và TỰ XUẤT MP4.
+
+TUYỆT ĐỐI KHÔNG YÊU CẦU CODEX RENDER, TEST-RENDER HOẶC XUẤT MP4.
+
+3. KIẾN TRÚC CẦN NHỚ
+
+- Engine input: engine\episode-input.schema.json
+- Engine CLI: engine\cli.cjs
+- One-Prompt CLI: orchestrator\cli.cjs
+- Runtime: engine\remotion\GenericStory.tsx
+- Tài liệu V2: docs\chat-text-story-system\ONE_PROMPT_V2_SYSTEM_RULES.md
+- Template prompt: docs\chat-text-story-system\ONE_PROMPT_V2_EPISODE_TEMPLATE.md
+
+Mỗi episode Generic Engine có entrypoint riêng `src\index.tsx`, đăng ký `src\registration.tsx`. Không dùng nhầm `POC_01\src\index.jsx` của project cũ.
+
+4. WORKFLOW MỘT PROMPT
+
+Người dùng gửi nguồn → ChatGPT tạo một prompt → Codex xác minh → Codex tạo workspace sạch → chạy orchestrator không-render → validation PASS → mở đúng composition trong Studio → người dùng tự xem/chỉnh/duyệt/xuất.
+
+Lệnh Codex phải dùng:
+
+node orchestrator/cli.cjs --prompt "<prompt.md>" --workspace "episodes\<workspace-moi>" --no-render
+
+Trong contract phải đặt `render.enabled=false`. Dùng cả hai lớp bảo vệ. Nếu thiếu mapping, geometry, asset hoặc quyết định quan trọng, dừng đúng stage và báo chính xác; không invent hoặc bypass.
+
+5. DỮ LIỆU CHUNG VÀ DỮ LIỆU RIÊNG
+
+Ba nhóm bắt buộc:
+
+A — Bất biến: One Prompt V2, không-render, đúng Inspector, TTS/SFX/mask/pause hiện hành, TING MES START, SFX TAIL, không sửa SFX gốc, không cộng chồng gap, không sửa episode đã duyệt.
+
+B — Mặc định khởi tạo episode mới: 1080×1920, 30 FPS, Chat Scale 0.83, Normal Gap 0.15 giây, IMAGE im lặng 0.5 giây, SFX thường mục tiêu khoảng 0.3 giây, BOOM 0.5–0.6 giây, Zoom OFF. Người dùng có thể chỉnh; Codex không tự reset Chat Scale về 1.0.
+
+C — Tính lại theo episode: số screenshot/bubble, geometry, mapping TTS/WAV/stable ID, cue và Pause After, gameplay/nhạc, gain/crop/vị trí và Props riêng.
+
+Quy tắc chung: pipeline TTS, cách tính timeline, semantics SFX, Bubble Mask là clip edge, schema Inspector editable, bảo toàn Props, không render.
+
+Dữ liệu riêng episode: script, số screenshot/bubble/voice, pixel geometry, CapCut mapping, trim exception, từng pause, từng cue, gain, gameplay, music, crop/scale, Zoom và Props approved.
+
+Mọi trường động phải sinh theo episode thật. Không cố định 10 screenshot, 78 câu, 80 event hoặc 16 SFX chỉ vì Video 04 có các con số đó.
+
+6. TTS VÀ CAPCUT
+
+- Giữ TTS nguồn, voice, speed, gain, trim đã duyệt; không regenerate.
+- Speed = composition speed × nested audio speed; FFmpeg atempo đúng một lần; Remotion playbackRate=1.
+- Gain là hệ số tuyến tính composition volume × audio volume, áp dụng một lần; không normalize.
+- Trim bảo thủ, không cắt âm tiết đầu/cuối. Trim exception dùng stable ID/clipId và lý do.
+- Không tạo TTS giả cho gửi ảnh hoặc dấu ba chấm.
+- Reader hiện kiểm tra count và text normalize rồi mapping theo thứ tự segment. Nếu punctuation/emoji/text khác hoặc thứ tự không chắc, phải lập crosswalk, phân loại khác biệt và dừng nếu substantive mismatch.
+
+7. SCREENSHOT VÀ GEOMETRY
+
+- Đọc kích thước pixel thật của từng PNG.
+- `rawTopY` và `maskStopY` dùng hệ tọa độ ảnh nguồn.
+- ChatGPT chịu trách nhiệm xác định `rawTopY`/`maskStopY` đầu vào từ screenshot. Codex đối chiếu ảnh thật và chỉ hiệu chỉnh cục bộ khi có sai lệch rõ ràng; không tự tính lại toàn bộ geometry nếu đã đạt.
+- Không scale tọa độ cũ rồi tự ghi VERIFIED.
+- Không dùng geometry episode trước.
+- Bubble đầu screenshot phải đúng header/crop; bubble sau reveal đúng thứ tự.
+- `geometryStatus` chỉ là VERIFIED/APPROVED sau kiểm tra preview thật.
+- Zoom mặc định OFF, chỉ bật khi được yêu cầu.
+
+8. INSPECTOR
+
+Các key kỹ thuật và nhãn tiếng Việt đã nghiệm thu:
+
+Normal Gap = Khoảng nghỉ mặc định (giây)
+Initial Margin = Thời gian chờ đầu video (giây)
+End Margin = Thời gian chờ cuối video (giây)
+Chat Scale = Tỷ lệ ảnh chat
+Chat Vertical Position = Vị trí dọc ảnh chat (pixel)
+Bubble Reveal Duration = Thời gian hiện tin nhắn (giây)
+Screenshot X Offset = Dịch ngang ảnh chat (pixel)
+Screenshot Y Offset = Dịch dọc toàn bộ ảnh chat (pixel)
+Per-Screenshot Y Offset = Dịch dọc từng ảnh (pixel)
+Pause After = Nghỉ sau câu thoại (giây)
+Bubble Mask Y = Mép hiển thị từng tin nhắn (pixel ảnh nguồn)
+
+Ba nhóm động phải dùng `z.object(Object.fromEntries(...))`, không dùng `z.record`, để chỉnh được trong Inspector. Số trường lấy từ episode thật. Zod `.describe()` tạo nút thông tin/ⓘ bằng tiếng Việt; hướng dẫn phải nói mục đích, đơn vị, tăng/giảm, ví dụ và cảnh báo. SFX ghi trong mô tả phải lấy từ cue thật, không suy từ Pause After.
+
+Props đã chỉnh phải được bảo toàn. Trước khi sửa registration/HMR, đọc toàn bộ Props hiện tại; sau sửa so sánh lại. Inline `defaultProps` giúp Studio lưu về source. Nếu đổi nhãn key phải có mapping về key kỹ thuật để preset cũ vẫn dùng được.
+
+9. BUBBLE MASK Y
+
+Quy tắc mặc định mới: không cắt sát đáy bubble hiện tại. Đặt mép cắt thấp hơn một chút, ưu tiên phần dưới của khoảng đen nhỏ giữa bubble hiện tại và bubble kế tiếp. Có thể chạm rất nhẹ vào đầu bubble kế tiếp nếu cần, nhưng chỉ lộ một phần rất nhỏ và không được làm lộ nội dung để đọc trước. Không dùng một khoảng pixel cố định cho mọi ảnh; chọn theo khoảng trống thực tế và cảm giác preview tự nhiên, thoáng, không cụt sát mép.
+
+Bubble Mask Y chỉ đổi mép vùng hiển thị, không dịch screenshot/avatar/bubble. Mỗi VOICE và IMAGE nhận mask riêng theo event ID. Reveal cùng screenshot nội suy từ mask trước tới mask hiện tại. Không lộ bubble tương lai, không cắt nhầm bubble hiện tại. Khi test, xem đúng frame và đổi khoảng 300 pixel nguồn rồi hoàn nguyên. Per-Screenshot Y Offset là transform riêng, không phải mask.
+
+10. PAUSE AFTER VÀ TIMELINE
+
+- Normal Gap mới nhất: mục tiêu 0,15 giây nếu người dùng không đặt khác.
+- Pause After chỉ chỉnh khoảng nghỉ hội thoại, không sửa SFX.
+- SFX thường: khoảng nghỉ mục tiêu khoảng 0,3 giây khi người dùng/quyết định episode yêu cầu.
+- BOOM: khoảng nghỉ mục tiêu khoảng 0,5–0,6 giây.
+- Không cộng chồng gap, không sinh pause vì SFX dài.
+- Khi Pause After đổi, voice phía sau dịch đúng; SFX gắn event giữ vị trí tương đối và có thể vang qua voice sau.
+- Các mức trên là quy tắc sáng tạo đầu vào, code không tự suy. Không sao chép pause Video 04.
+
+11. SFX
+
+TING MES:
+- Chỉ cho event được chỉ định như gửi ảnh/chuyển khoản/mở đoạn chat hoặc ngày mới.
+- Phát đúng START; nếu có TTS thì đồng thời đầu TTS.
+- Event không thoại được chỉ định thường 0,5 giây.
+- Không delay riêng, không cắt file.
+
+TAIL thường:
+- Chỉ cho VOICE, vào vùng suy giảm rất nhỏ của âm tiết cuối, không nhầm trailing silence/WAV end.
+- Engine phân tích RMS 10 ms và dùng decayStart.
+- Cho phép overlap câu sau; không sửa file SFX.
+
+BOOM:
+- Cũng vào tail âm tiết cuối; phát trọn; có thể chồng câu sau.
+- Không chờ BOOM kết thúc mới sang câu.
+- Pause 0,5–0,6 giây là quyết định riêng, không phải implicit gap.
+
+START/OVERLAY:
+- START ở đầu event/TTS và không tự chuyển thành TAIL.
+- OVERLAY neo đúng START/END theo kịch bản và được chồng thoại.
+
+HỖN LOẠN:
+- Tôn trọng trigger được chỉ định. DEEP TAIL phải được nêu rõ và kiểm tra riêng.
+- Phát trọn phần kết.
+
+Chung:
+- Không tự thêm SFX, không sửa/trim/normalize/đổi gain/duration file.
+- Mỗi cue phải có eventId, assetId, trigger, anchor/offset, gain, overlap, preserveFullDuration.
+- Tách quy tắc loại SFX khỏi cue kịch bản và thông số episode.
+
+12. GAMEPLAY VÀ NHẠC
+
+Mỗi episode dùng file người dùng cung cấp. Gameplay ở dưới chat, bắt đầu frame 0, loop/cover theo input; không tự mute nếu người dùng muốn giữ audio. Nhạc là track loop riêng, gain/crossfade theo episode. Không lấy gameplay, Chopin, gain hoặc crop Video 04 làm mặc định.
+
+Khi thay gameplay, phải thay đúng media runtime composition đang đọc. Nếu engine đã copy/staging vào `public/background/gameplay.mp4`, phải cập nhật chính asset đó và kiểm tra hash/nội dung với file nguồn. Không được báo hoàn tất chỉ vì `episode-input.generated.json` đã đổi. Luôn xác minh đúng workspace, không chạm episode khác và giữ nguyên gain, nhạc, TTS, SFX, timeline, Props/Inspector.
+
+13. MỞ STUDIO
+
+Sau build PASS:
+
+Set-Location "D:\ChatTextStory_AI\POC_01\episodes\<workspace>"
+& "D:\ChatTextStory_AI\POC_01\node_modules\.bin\remotion.cmd" studio src/index.tsx --port=<cổng-trống> --no-open
+
+Mở:
+
+http://localhost:<cổng-trống>/<compositionId>
+
+Nếu cổng bận, chọn cổng khác; không dừng Studio/render đang chạy. Xác nhận workspace, composition, gameplay/music/TTS/SFX đúng trước khi bàn giao.
+
+14. PROMPT SỬA MỘT CHI TIẾT
+
+Khi người dùng chỉ muốn sửa một chi tiết, prompt phải ghi rõ:
+
+- workspace episode hiện tại;
+- đúng file/thuộc tính được phép đổi;
+- các phần bị khóa;
+- bảo toàn Props hiện tại;
+- kiểm tra trực tiếp trong Studio;
+- không tạo workspace mới, không chạy lại toàn pipeline, không render;
+- nếu cần sửa engine chung thì dừng và xin phép trước (trừ khi người dùng đã cho phép rõ).
+
+15. XUẤT VIDEO VÀ BẢO TOÀN PROPS
+
+Video 05 từng báo `Error while getting compositions`, `window.getStaticCompositions is undefined` tại `localhost:3000/index.html`. Đây là lỗi quy trình truy xuất composition khi xuất; nguyên nhân gốc chưa được xác minh và chưa FIXED.
+
+- Studio phải chạy đúng entrypoint `<episode>\src\index.tsx`, composition ID, workspace, port và URL; không mặc định cổng 3000.
+- Khi cung cấp lệnh PowerShell xuất cho người dùng, dùng entrypoint/composition đã xác minh. Nếu Render trong Studio lỗi, có thể hướng dẫn người dùng xuất trực tiếp từ source episode; Codex không tự chạy lệnh render.
+- Trước khi đưa lệnh, xác minh Props Inspector đã được lưu vào registration/defaultProps/preset nào và lệnh sẽ dùng đúng bộ Props đó. Không mặc định thay đổi đang thấy trong Studio đã được ghi vào `defaultProps`; cảnh báo rõ nếu có nguy cơ mất chỉnh sửa.
+
+16. TRẠNG THÁI NGHIỆM THU V2 VÀ GIỚI HẠN CÒN LẠI
+
+Đã PASS trên fixture Studio V2 ngày 2026-10-31:
+
+- Scaffold sinh Inspector tiếng Việt/editable; ba nhóm động dùng `z.object(Object.fromEntries(...))`, không còn `record (not editable)`.
+- VOICE Mask và IMAGE Mask đều dùng giá trị riêng theo event. IMAGE Mask thử 420→720 pixel tại đúng frame làm clip edge đổi đúng 300 pixel, không dịch ảnh; đã hoàn nguyên 420.
+- Per-Screenshot Y Offset, Pause After và End Margin tác động đúng, độc lập và đều đã hoàn nguyên.
+- `calculateMetadata` cập nhật duration runtime; End Margin thử 0,15→2,00 giây đổi 77→107 frame rồi trở lại 77 frame.
+- Orchestrator mặc định không render, chỉ render khi contract cho phép và có `--render`; tự chọn cổng trống và mở đúng Studio sau PASS.
+- Kiểm thử scaffold, contract/gates và Studio fixture đều PASS; không render hoặc xuất MP4.
+
+Giới hạn còn lại phải nói thật:
+
+- Engine chưa có loại silent text bubble chuẩn; chỉ có VOICE cần audio và IMAGE. Không tạo fake TTS.
+- CapCut reader chưa phải stable-ID crosswalk tổng quát.
+- Geometry tự động chưa được chứng minh chính xác end-to-end; vẫn cần human preview.
+- Lỗi lấy composition khi xuất Video 05 chưa được xác minh nguyên nhân gốc; không đánh dấu FIXED.
+- Chưa chạy một episode CapCut mới hoàn chỉnh end-to-end trong đợt nghiệm thu fixture này; episode thật tiếp theo vẫn phải xác minh nguồn/mapping/geometry theo contract.
+- Video 03, Video 04 và Golden Master không được retrofit hoặc thay đổi trong đợt V2 này.
+
+Khi gặp một giới hạn thật: báo blocker, bằng chứng và đề xuất nhỏ nhất. Không tuyên bố PASS nếu chỉ kiểm tra JSON mà chưa mở/kiểm tra Studio theo phạm vi được yêu cầu. Không âm thầm sửa engine để làm cho tài liệu có vẻ đúng.

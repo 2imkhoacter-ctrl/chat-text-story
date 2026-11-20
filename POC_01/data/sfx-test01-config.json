@@ -1,0 +1,24 @@
+{
+  "libraryDirectory": "D:/Download/SOUND EFFECT",
+  "files": {
+    "BOOM": "BOOM.MP3",
+    "TING MES": "Ting mes.MP3",
+    "EMOJI": "emoji.MP3",
+    "đánh rắm": "danh ram.MP3",
+    "Cat huh": "Cat huh.MP3",
+    "hỗn loạn": "hỗn loạn(1).MP3"
+  },
+  "tailNextVoiceSeconds": 0.85,
+  "tailEffects": {
+    "BOOM": {
+      "advanceSeconds": 0,
+      "nextVoiceSeconds": 0.6,
+      "gainDb": 3.5
+    },
+    "hỗn loạn": {
+      "advanceSeconds": 0.08
+    }
+  },
+  "eventTailOffsetsSeconds": {},
+  "eventHoldsSeconds": {"event-018": 0.3}
+}

@@ -1,0 +1,9 @@
+{
+  "audio": "public/full_tts.mp3.MP3",
+  "generatedAudioDir": "public/generated-audio-v4a",
+  "timingManifest": "public/generated-audio-v4a/timing-manifest.json",
+  "outputVideo": "out/final-v4a.mp4",
+  "phraseHeadPaddingSeconds": 0.03,
+  "phraseTailPaddingSeconds": 0.05,
+  "phrasePauses": {}
+}

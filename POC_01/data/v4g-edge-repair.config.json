@@ -1,0 +1,22 @@
+{
+  "edgeWindowMs": 350,
+  "rmsWindowMs": 10,
+  "hopMs": 5,
+  "noisePercentile": 10,
+  "noiseMarginDb": 12,
+  "minimumPeakToNoiseFloorDb": 18,
+  "peakRelativeThresholdDb": -28,
+  "absoluteOnFloorDbfs": -55,
+  "hysteresisOffRatio": 0.5,
+  "mergeGapMs": 10,
+  "minimumFragmentMs": 10,
+  "maximumFragmentMs": 90,
+  "minimumIsolationSilenceMs": 25,
+  "minimumMainActiveMs": 90,
+  "minimumMainSpanMs": 120,
+  "maximumFragmentDistanceFromEdgeMs": 25,
+  "neighborJoinToleranceMs": 20,
+  "minimumNeighborMainClusterMs": 90,
+  "maximumRepairShiftMs": 180,
+  "minimumQuietCutMarginMs": 8
+}

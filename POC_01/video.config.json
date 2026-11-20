@@ -1,0 +1,35 @@
+{
+  "screenshot": "public/screenshot_1792556417.png",
+  "audio": "1021-01-sao chép(1).MP3",
+  "generatedAudioDir": "public/generated-audio",
+  "timingManifest": "public/generated-audio/timing-manifest.json",
+  "outputAudio": "public/prepared-audio.wav",
+  "outputVideo": "out/final.mp4",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "gameplay": "public/gameplay.mp4",
+  "endMarginSeconds": 0.15,
+  "chatScale": 0.83,
+  "chatVerticalPosition": 700,
+  "initialMarginSeconds": 0.05,
+  "silenceThresholdDb": -35,
+  "minimumSilenceDurationSeconds": 0.25,
+  "defaultPauseAfterSeconds": 0.1,
+  "fit": "contain",
+  "sourceDimensions": { "width": 523, "height": 726 },
+  "maskStops": [
+    { "y": 484, "status": "placeholder" },
+    { "y": 536, "status": "placeholder" },
+    { "y": 586, "status": "placeholder" },
+    { "y": 634, "status": "placeholder" },
+    { "y": 684, "status": "placeholder" }
+  ],
+  "phrases": [
+    { "id": "phrase-001", "label": "Tâm ơi", "sourceBoundary": null, "pauseAfterSeconds": null },
+    { "id": "phrase-002", "label": "Nhà anh hôm nay có giỗ", "sourceBoundary": null, "pauseAfterSeconds": null },
+    { "id": "phrase-003", "label": "Khách tới kín trước cửa rồi", "sourceBoundary": null, "pauseAfterSeconds": null },
+    { "id": "phrase-004", "label": "Anh vừa nhấc cái ghế nhà em sang bên", "sourceBoundary": null, "pauseAfterSeconds": null },
+    { "id": "phrase-005", "label": "Cho anh đỗ nhờ 2 tiếng nhé?", "sourceBoundary": null, "pauseAfterSeconds": null }
+  ]
+}

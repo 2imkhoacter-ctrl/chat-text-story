@@ -1,0 +1,13 @@
+{
+  "audio": "public/full_tts.mp3.MP3",
+  "script": "data/tts-script.txt",
+  "expectedPhraseCount": 97,
+  "model": "C:/Users/ADMIN/AppData/Local/Buzz/Buzz/Cache/models/Whisper/large-v2.pt",
+  "language": "vi",
+  "device": "cuda",
+  "generatedAudioDir": "public/generated-audio-v4a1",
+  "timingManifest": "public/generated-audio-v4a1/timing-manifest.json",
+  "phraseHeadPaddingSeconds": 0.03,
+  "phraseTailPaddingSeconds": 0.05,
+  "phrasePauses": {}
+}

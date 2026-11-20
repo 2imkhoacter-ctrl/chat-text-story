@@ -1,0 +1,508 @@
+{
+  "version": 1,
+  "definitions": {
+    "BOOM": {
+      "mode": "TAIL",
+      "timingFormula": "voice.timelineStart + boundaryAnalysis.decayStartSeconds",
+      "overlapSpeech": true,
+      "crossNextVoice": true,
+      "preserveFullDuration": true,
+      "implicitGapAfterSeconds": 0
+    },
+    "AMONGUS": {
+      "mode": "OVERLAY",
+      "timingFormula": "explicit approved trigger anchored to event",
+      "overlapSpeech": true,
+      "crossNextVoice": true,
+      "preserveFullDuration": true,
+      "implicitGapAfterSeconds": 0
+    },
+    "AMONGUS TRẦM": {
+      "mode": "OVERLAY",
+      "timingFormula": "explicit approved trigger anchored to event",
+      "overlapSpeech": true,
+      "crossNextVoice": true,
+      "preserveFullDuration": true,
+      "implicitGapAfterSeconds": 0
+    },
+    "MONEY": {
+      "mode": "TAIL",
+      "timingFormula": "voice.timelineStart + boundaryAnalysis.decayStartSeconds",
+      "overlapSpeech": true,
+      "crossNextVoice": true,
+      "preserveFullDuration": true,
+      "implicitGapAfterSeconds": 0
+    },
+    "CAT HUH": {
+      "mode": "TAIL",
+      "timingFormula": "voice.timelineStart + boundaryAnalysis.decayStartSeconds",
+      "overlapSpeech": true,
+      "crossNextVoice": true,
+      "preserveFullDuration": true,
+      "implicitGapAfterSeconds": 0,
+      "approvedAsset": "sfx/Cat huh-trimmed.wav"
+    },
+    "TIẾNG ĐÁNH RẮM": {
+      "mode": "TAIL",
+      "timingFormula": "voice.timelineStart + boundaryAnalysis.decayStartSeconds",
+      "overlapSpeech": true,
+      "crossNextVoice": true,
+      "preserveFullDuration": true,
+      "implicitGapAfterSeconds": 0
+    },
+    "HỖN LOẠN": {
+      "mode": "TAIL_IN_VIDEO03",
+      "timingFormula": "voice.timelineStart + boundaryAnalysis.decayStartSeconds; independent of BOOM",
+      "overlapSpeech": true,
+      "crossNextVoice": true,
+      "preserveFullDuration": true,
+      "implicitGapAfterSeconds": 0
+    },
+    "TING MES": {
+      "mode": "IMAGE_EVENT",
+      "timingFormula": "imageEvent.timelineStart",
+      "overlapSpeech": true,
+      "crossNextVoice": true,
+      "preserveFullDuration": true,
+      "implicitGapAfterSeconds": 0
+    }
+  },
+  "assets": {
+    "TING MES": {
+      "relativeAudioFile": "sfx/Ting mes.MP3",
+      "durationSeconds": 0.574667,
+      "sha256": "34a8533ef8bc0dbf22f7588f4ca63b3ef5317846876b2d7527afd675ffda3870"
+    },
+    "BOOM": {
+      "relativeAudioFile": "sfx/Boom.MP3",
+      "gain": 1.4962356560944334,
+      "durationSeconds": 1.750167,
+      "sha256": "edfd6861161a95484595807874d2e4836294d120a5ec7633e0dcf599b9eb2900"
+    },
+    "AMONGUS": {
+      "relativeAudioFile": "sfx/amongus.MP3",
+      "sourceFile": "D:/Download/SOUND EFFECT/amongus.MP3",
+      "durationSeconds": 2.638333,
+      "sha256": "e9c757be9f9c479b6872cab335ad098a02a7c0e84c90c007928f7418e77bd2e5"
+    },
+    "AMONGUS TRẦM": {
+      "relativeAudioFile": "sfx/amongus-tram.MP3",
+      "sourceFile": "D:/Download/SOUND EFFECT/amongus trầm.MP3",
+      "durationSeconds": 2.638333,
+      "sha256": "aff9f9e6fcebe3d6a6da89806dd40e77f61ee258a6ba25316a2bdf842dccdba1"
+    },
+    "MONEY": {
+      "relativeAudioFile": "sfx/Money.mp3",
+      "sourceFile": "D:/Download/SOUND EFFECT/Money.mp3",
+      "durationSeconds": 2.716735,
+      "sha256": "1fbb9c66104f317977cf757e4d04f13a01baa252a43e188c370c2e5d4c5c9a66"
+    },
+    "CAT HUH": {
+      "relativeAudioFile": "sfx/Cat huh-trimmed.wav",
+      "durationSeconds": 0.341361,
+      "sha256": "7d54185e803b0ce19c34a48dd61c68d5fd1195e24306b9f6ba3de423825f1597"
+    },
+    "TIẾNG ĐÁNH RẮM": {
+      "relativeAudioFile": "sfx/danh ram.MP3",
+      "durationSeconds": 0.391833,
+      "sha256": "e37dbea3a286d92621bb69395186c82ced1a2188851af4ee52ca6d571ec9b66a"
+    },
+    "HỖN LOẠN": {
+      "relativeAudioFile": "sfx/hỗn loạn(1).MP3",
+      "durationSeconds": 0.783667,
+      "sha256": "611af088c16aa440201d605a5faa5179967857b8505aa2fb5e2593ee8433862d"
+    }
+  },
+  "approvedVideo03Cues": [
+    {
+      "eventId": "girlfriend03-image-1",
+      "effect": "TING MES",
+      "mode": "NORMAL",
+      "voiceIndex": null,
+      "speaker": "image-event",
+      "text": "Poster tuyển bạn gái",
+      "timelineStart": 0.06666666666666667,
+      "timelineEnd": 0.6413336666666667,
+      "gain": 1,
+      "baseTimelineStart": 0.06666666666666667,
+      "baseTimelineEnd": 0.6413336666666667
+    },
+    {
+      "eventId": "girlfriend03-image-10",
+      "effect": "TING MES",
+      "mode": "NORMAL",
+      "voiceIndex": null,
+      "speaker": "image-event",
+      "text": "Ảnh ghép tin nhắn đòi đồ",
+      "timelineStart": 75.5,
+      "timelineEnd": 76.074667,
+      "gain": 1,
+      "baseTimelineStart": 75.5,
+      "baseTimelineEnd": 76.074667
+    },
+    {
+      "eventId": "girlfriend03-image-12",
+      "effect": "TING MES",
+      "mode": "NORMAL",
+      "voiceIndex": null,
+      "speaker": "image-event",
+      "text": "Bình chọn ai được trả trước",
+      "timelineStart": 88.73333333333333,
+      "timelineEnd": 89.30800033333334,
+      "gain": 1,
+      "baseTimelineStart": 88.73333333333333,
+      "baseTimelineEnd": 89.30800033333334
+    },
+    {
+      "eventId": "girlfriend03-006",
+      "effect": "BOOM",
+      "mode": "TAIL",
+      "voiceIndex": 6,
+      "speaker": "BV075_streaming",
+      "text": "Rất có tố chất làm vợ",
+      "timelineStart": 7.989999999999999,
+      "timelineEnd": 9.740167,
+      "gain": 1.4962356560944334,
+      "speechEnd": 8.11,
+      "decayStart": 7.989999999999999,
+      "boundaryAnalysis": {
+        "method": "10ms RMS; adaptive speech threshold; final-300ms local energy peak marks decay onset",
+        "speechEndSeconds": 1.01,
+        "decayStartSeconds": 0.89,
+        "thresholdDb": -45,
+        "peakDb": -11.83,
+        "noiseDb": -60.926
+      },
+      "baseTimelineStart": 7.989999999999999,
+      "baseTimelineEnd": 9.740167
+    },
+    {
+      "eventId": "girlfriend03-009",
+      "effect": "BOOM",
+      "mode": "TAIL",
+      "voiceIndex": 9,
+      "speaker": "BV075_streaming",
+      "text": "Ấm áp thật",
+      "timelineStart": 11.943333333333333,
+      "timelineEnd": 13.693500333333333,
+      "gain": 1.4962356560944334,
+      "speechEnd": 12.033333333333333,
+      "decayStart": 11.943333333333333,
+      "boundaryAnalysis": {
+        "method": "10ms RMS; adaptive speech threshold; final-300ms local energy peak marks decay onset",
+        "speechEndSeconds": 0.5,
+        "decayStartSeconds": 0.41,
+        "thresholdDb": -45,
+        "peakDb": -11.044,
+        "noiseDb": -82.665
+      },
+      "baseTimelineStart": 11.976666666666667,
+      "baseTimelineEnd": 13.726833666666666
+    },
+    {
+      "eventId": "girlfriend03-012",
+      "effect": "BOOM",
+      "mode": "TAIL",
+      "voiceIndex": 12,
+      "speaker": "BV075_streaming",
+      "text": "Còn quan tâm đồ của anh trong lòng nhỉ",
+      "timelineStart": 16.659999999999997,
+      "timelineEnd": 18.410167,
+      "gain": 1.4962356560944334,
+      "speechEnd": 16.96,
+      "decayStart": 16.659999999999997,
+      "boundaryAnalysis": {
+        "method": "10ms RMS; adaptive speech threshold; final-300ms local energy peak marks decay onset",
+        "speechEndSeconds": 1.46,
+        "decayStartSeconds": 1.16,
+        "thresholdDb": -45,
+        "peakDb": -9.51,
+        "noiseDb": -190.109
+      },
+      "baseTimelineStart": 16.759999999999998,
+      "baseTimelineEnd": 18.510167
+    },
+    {
+      "eventId": "girlfriend03-027",
+      "effect": "BOOM",
+      "mode": "TAIL",
+      "voiceIndex": 27,
+      "speaker": "BV075_streaming",
+      "text": "Em nhớ hết những thứ anh thích luôn à",
+      "timelineStart": 32.84,
+      "timelineEnd": 34.590167,
+      "gain": 1.4962356560944334,
+      "speechEnd": 32.99,
+      "decayStart": 32.84,
+      "boundaryAnalysis": {
+        "method": "10ms RMS; adaptive speech threshold; final-300ms local energy peak marks decay onset",
+        "speechEndSeconds": 1.49,
+        "decayStartSeconds": 1.34,
+        "thresholdDb": -45,
+        "peakDb": -10.491,
+        "noiseDb": -89.168
+      },
+      "baseTimelineStart": 33.07333333333334,
+      "baseTimelineEnd": 34.823500333333335
+    },
+    {
+      "eventId": "girlfriend03-034",
+      "effect": "BOOM",
+      "mode": "TAIL",
+      "voiceIndex": 34,
+      "speaker": "BV075_streaming",
+      "text": "Ghen tuông sẽ bị trừ điểm đấy",
+      "timelineStart": 40.42333333333334,
+      "timelineEnd": 42.17350033333334,
+      "gain": 1.4962356560944334,
+      "speechEnd": 40.56333333333333,
+      "decayStart": 40.42333333333334,
+      "boundaryAnalysis": {
+        "method": "10ms RMS; adaptive speech threshold; final-300ms local energy peak marks decay onset",
+        "speechEndSeconds": 1.23,
+        "decayStartSeconds": 1.09,
+        "thresholdDb": -45,
+        "peakDb": -9.714,
+        "noiseDb": -61.624
+      },
+      "baseTimelineStart": 40.723333333333336,
+      "baseTimelineEnd": 42.473500333333334
+    },
+    {
+      "eventId": "girlfriend03-038",
+      "effect": "BOOM",
+      "mode": "TAIL",
+      "voiceIndex": 38,
+      "speaker": "BV075_streaming",
+      "text": "Người thắng được bao nhé",
+      "timelineStart": 44.08,
+      "timelineEnd": 45.830166999999996,
+      "gain": 1.4962356560944334,
+      "speechEnd": 44.38,
+      "decayStart": 44.08,
+      "boundaryAnalysis": {
+        "method": "10ms RMS; adaptive speech threshold; final-300ms local energy peak marks decay onset",
+        "speechEndSeconds": 0.88,
+        "decayStartSeconds": 0.5800000000000001,
+        "thresholdDb": -28.807,
+        "peakDb": -10.569,
+        "noiseDb": -36.807
+      },
+      "baseTimelineStart": 44.379999999999995,
+      "baseTimelineEnd": 46.13016699999999
+    },
+    {
+      "eventId": "girlfriend03-048",
+      "effect": "BOOM",
+      "mode": "TAIL",
+      "voiceIndex": 48,
+      "speaker": "BV075_streaming",
+      "text": "Sẽ được cộng 20 điểm",
+      "timelineStart": 58.81333333333333,
+      "timelineEnd": 60.56350033333333,
+      "gain": 1.4962356560944334,
+      "speechEnd": 58.95333333333333,
+      "decayStart": 58.81333333333333,
+      "boundaryAnalysis": {
+        "method": "10ms RMS; adaptive speech threshold; final-300ms local energy peak marks decay onset",
+        "speechEndSeconds": 1.02,
+        "decayStartSeconds": 0.88,
+        "thresholdDb": -44.716,
+        "peakDb": -9.346,
+        "noiseDb": -52.716
+      },
+      "baseTimelineStart": 59.31333333333333,
+      "baseTimelineEnd": 61.06350033333333
+    },
+    {
+      "eventId": "girlfriend03-055",
+      "effect": "BOOM",
+      "mode": "TAIL",
+      "voiceIndex": 55,
+      "speaker": "BV075_streaming",
+      "text": "Để chứng minh tình yêu của mình",
+      "timelineStart": 68.55333333333333,
+      "timelineEnd": 70.30350033333333,
+      "gain": 1.4962356560944334,
+      "speechEnd": 68.85333333333332,
+      "decayStart": 68.55333333333333,
+      "boundaryAnalysis": {
+        "method": "10ms RMS; adaptive speech threshold; final-300ms local energy peak marks decay onset",
+        "speechEndSeconds": 1.22,
+        "decayStartSeconds": 0.92,
+        "thresholdDb": -45,
+        "peakDb": -9.466,
+        "noiseDb": -78.5
+      },
+      "baseTimelineStart": 69.08666666666666,
+      "baseTimelineEnd": 70.83683366666666
+    },
+    {
+      "eventId": "girlfriend03-069",
+      "effect": "BOOM",
+      "mode": "TAIL",
+      "voiceIndex": 69,
+      "speaker": "BV075_streaming",
+      "text": "Anh lập nhóm này để 3 em tranh giành nhau anh cơ mà",
+      "timelineStart": 85.25666666666666,
+      "timelineEnd": 87.00683366666667,
+      "gain": 1.4962356560944334,
+      "speechEnd": 85.42666666666666,
+      "decayStart": 85.25666666666666,
+      "boundaryAnalysis": {
+        "method": "10ms RMS; adaptive speech threshold; final-300ms local energy peak marks decay onset",
+        "speechEndSeconds": 2.06,
+        "decayStartSeconds": 1.89,
+        "thresholdDb": -45,
+        "peakDb": -10.735,
+        "noiseDb": -79.305
+      },
+      "baseTimelineStart": 86.42333333333333,
+      "baseTimelineEnd": 88.17350033333334
+    },
+    {
+      "eventId": "girlfriend03-014",
+      "effect": "AMONGUS",
+      "mode": "OVERLAY",
+      "voiceIndex": 14,
+      "speaker": "BV075_streaming",
+      "text": "Anh hiểu rồi",
+      "timelineStart": 18.2,
+      "timelineEnd": 20.838333,
+      "gain": 1,
+      "baseTimelineStart": 18.4,
+      "baseTimelineEnd": 21.038332999999998
+    },
+    {
+      "eventId": "girlfriend03-043",
+      "effect": "AMONGUS TRẦM",
+      "mode": "OVERLAY",
+      "voiceIndex": 43,
+      "speaker": "BV075_streaming",
+      "text": "Anh chưa thể trả lời được",
+      "timelineStart": 50.4,
+      "timelineEnd": 53.038333,
+      "gain": 1,
+      "baseTimelineStart": 50.766666666666666,
+      "baseTimelineEnd": 53.40499966666667
+    },
+    {
+      "eventId": "girlfriend03-059",
+      "effect": "AMONGUS TRẦM",
+      "mode": "OVERLAY",
+      "voiceIndex": 59,
+      "speaker": "multi_female_skye_uranus_bigtts",
+      "text": "Thế để công bằng",
+      "timelineStart": 71.23333333333332,
+      "timelineEnd": 73.87166633333332,
+      "gain": 1,
+      "baseTimelineStart": 71.86666666666666,
+      "baseTimelineEnd": 74.50499966666666
+    },
+    {
+      "eventId": "girlfriend03-026",
+      "effect": "MONEY",
+      "mode": "TAIL",
+      "voiceIndex": 26,
+      "speaker": "BV075_streaming",
+      "text": "Hà được cộng 10 điểm",
+      "timelineStart": 31.223333333333333,
+      "timelineEnd": 33.940068333333336,
+      "gain": 1,
+      "speechEnd": 31.37333333333333,
+      "decayStart": 31.223333333333333,
+      "boundaryAnalysis": {
+        "method": "10ms RMS; adaptive speech threshold; final-300ms local energy peak marks decay onset",
+        "speechEndSeconds": 0.84,
+        "decayStartSeconds": 0.69,
+        "thresholdDb": -45,
+        "peakDb": -9.834,
+        "noiseDb": -77.404
+      },
+      "baseTimelineStart": 31.456666666666667,
+      "baseTimelineEnd": 34.17340166666667
+    },
+    {
+      "eventId": "girlfriend03-031",
+      "effect": "CAT HUH",
+      "mode": "TAIL",
+      "voiceIndex": 31,
+      "speaker": "BV075_streaming",
+      "text": "Anh biết em đang muốn gây ấn tượng với anh",
+      "timelineStart": 37.1,
+      "timelineEnd": 37.441361,
+      "gain": 1,
+      "speechEnd": 37.230000000000004,
+      "decayStart": 37.1,
+      "boundaryAnalysis": {
+        "method": "10ms RMS; adaptive speech threshold; final-300ms local energy peak marks decay onset",
+        "speechEndSeconds": 1.53,
+        "decayStartSeconds": 1.4,
+        "thresholdDb": -45,
+        "peakDb": -11.544,
+        "noiseDb": -87.841
+      },
+      "gapAfterSeconds": 0,
+      "baseTimelineStart": 37.36666666666667,
+      "baseTimelineEnd": 37.708027666666666
+    },
+    {
+      "eventId": "girlfriend03-040",
+      "effect": "TIẾNG ĐÁNH RẮM",
+      "mode": "TAIL",
+      "voiceIndex": 40,
+      "speaker": "BV075_streaming",
+      "text": "Yêu nhau đừng tính toán vật chất chứ",
+      "timelineStart": 47.71666666666666,
+      "timelineEnd": 48.10849966666666,
+      "gain": 1,
+      "speechEnd": 47.81666666666666,
+      "decayStart": 47.71666666666666,
+      "boundaryAnalysis": {
+        "method": "10ms RMS; adaptive speech threshold; final-300ms local energy peak marks decay onset",
+        "speechEndSeconds": 1.35,
+        "decayStartSeconds": 1.25,
+        "thresholdDb": -45,
+        "peakDb": -10.651,
+        "noiseDb": -60.527
+      },
+      "baseTimelineStart": 48.05,
+      "baseTimelineEnd": 48.441832999999995
+    },
+    {
+      "eventId": "girlfriend03-076",
+      "effect": "HỖN LOẠN",
+      "mode": "TAIL",
+      "voiceIndex": 76,
+      "speaker": "multi_female_skye_uranus_bigtts",
+      "text": "Là trả đồ cho 3 bọn tao",
+      "timelineStart": 92.89333333333335,
+      "timelineEnd": 93.67700033333334,
+      "gain": 1,
+      "speechEnd": 93.05333333333334,
+      "decayStart": 92.89333333333335,
+      "boundaryAnalysis": {
+        "method": "10ms RMS; adaptive speech threshold; final-300ms local energy peak marks decay onset",
+        "speechEndSeconds": 1.42,
+        "decayStartSeconds": 1.26,
+        "thresholdDb": -45,
+        "peakDb": -16.754,
+        "noiseDb": -54.447
+      },
+      "baseTimelineStart": 94.22666666666667,
+      "baseTimelineEnd": 95.01033366666667
+    }
+  ],
+  "video03FinalException": {
+    "voiceIndex": 76,
+    "text": "Là trả đồ cho 3 bọn tao",
+    "allowedEffects": [
+      "HỖN LOẠN"
+    ],
+    "forbiddenEffects": [
+      "BOOM"
+    ],
+    "forbiddenFormula": "chaosStart = boomStart + boomDuration * 2/3"
+  },
+  "timelineNote": "Cues use the effective Studio timeline after approved Props, not raw base timeline timestamps."
+}

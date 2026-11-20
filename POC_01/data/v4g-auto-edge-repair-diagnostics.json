@@ -1,0 +1,5756 @@
+{
+  "summary": {
+    "phrasesScanned": 97,
+    "headWindowsScanned": 97,
+    "tailWindowsScanned": 97,
+    "sharedBoundariesChecked": 96,
+    "headCandidates": 2,
+    "tailCandidates": 5,
+    "repaired": 3,
+    "unchanged": 93,
+    "uncertain": 3,
+    "outputWavs": 97,
+    "v4cPreserved": true,
+    "concatenatedPcmMatchesMasterExactly": true
+  },
+  "parameters": {
+    "edgeWindowMs": 350,
+    "rmsWindowMs": 10,
+    "hopMs": 5,
+    "noisePercentile": 10,
+    "noiseMarginDb": 12,
+    "minimumPeakToNoiseFloorDb": 18,
+    "peakRelativeThresholdDb": -28,
+    "absoluteOnFloorDbfs": -55,
+    "hysteresisOffRatio": 0.5,
+    "mergeGapMs": 10,
+    "minimumFragmentMs": 10,
+    "maximumFragmentMs": 90,
+    "minimumIsolationSilenceMs": 25,
+    "minimumMainActiveMs": 90,
+    "minimumMainSpanMs": 120,
+    "maximumFragmentDistanceFromEdgeMs": 25,
+    "neighborJoinToleranceMs": 20,
+    "minimumNeighborMainClusterMs": 90,
+    "maximumRepairShiftMs": 180,
+    "minimumQuietCutMarginMs": 8
+  },
+  "baseline": "public/generated-audio-v4c/timing-manifest.json",
+  "boundaries": [
+    {
+      "boundaryId": "boundary_001",
+      "index": 1,
+      "v4cBoundary": 0.58,
+      "savedV4cManualMs": -40,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 0.58,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_002",
+      "index": 2,
+      "v4cBoundary": 1.66,
+      "savedV4cManualMs": 80,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 1.66,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_003",
+      "index": 3,
+      "v4cBoundary": 2.97,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 2.97,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_004",
+      "index": 4,
+      "v4cBoundary": 4.6,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 4.6,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_005",
+      "index": 5,
+      "v4cBoundary": 5.8,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 5.8,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_006",
+      "index": 6,
+      "v4cBoundary": 6.58,
+      "savedV4cManualMs": 80,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 6.58,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_007",
+      "index": 7,
+      "v4cBoundary": 7.93,
+      "savedV4cManualMs": -50,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 7.93,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_008",
+      "index": 8,
+      "v4cBoundary": 9.22,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 9.22,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_009",
+      "index": 9,
+      "v4cBoundary": 9.71,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 9.71,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_010",
+      "index": 10,
+      "v4cBoundary": 11.0,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 11.0,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_011",
+      "index": 11,
+      "v4cBoundary": 11.82,
+      "savedV4cManualMs": -30,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 11.82,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_012",
+      "index": 12,
+      "v4cBoundary": 12.99,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 12.99,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_013",
+      "index": 13,
+      "v4cBoundary": 15.47,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 15.47,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_014",
+      "index": 14,
+      "v4cBoundary": 17.02,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 17.02,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_015",
+      "index": 15,
+      "v4cBoundary": 18.39,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 18.39,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_016",
+      "index": 16,
+      "v4cBoundary": 19.41,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 19.41,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_017",
+      "index": 17,
+      "v4cBoundary": 21.12,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 21.12,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_018",
+      "index": 18,
+      "v4cBoundary": 22.41,
+      "savedV4cManualMs": -50,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 22.41,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_019",
+      "index": 19,
+      "v4cBoundary": 22.99,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 22.99,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_020",
+      "index": 20,
+      "v4cBoundary": 23.8,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 23.8,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_021",
+      "index": 21,
+      "v4cBoundary": 24.83,
+      "savedV4cManualMs": 80,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 24.83,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_022",
+      "index": 22,
+      "v4cBoundary": 25.28,
+      "savedV4cManualMs": 80,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 25.28,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_023",
+      "index": 23,
+      "v4cBoundary": 27.09,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 27.09,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_024",
+      "index": 24,
+      "v4cBoundary": 27.75,
+      "savedV4cManualMs": -80,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 27.75,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_025",
+      "index": 25,
+      "v4cBoundary": 28.54,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 28.54,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_026",
+      "index": 26,
+      "v4cBoundary": 29.39,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 29.39,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_027",
+      "index": 27,
+      "v4cBoundary": 30.96,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 30.96,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_028",
+      "index": 28,
+      "v4cBoundary": 33.12,
+      "savedV4cManualMs": -80,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 33.12,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_029",
+      "index": 29,
+      "v4cBoundary": 35.22,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 35.22,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_030",
+      "index": 30,
+      "v4cBoundary": 36.85,
+      "savedV4cManualMs": -80,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 36.85,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_031",
+      "index": 31,
+      "v4cBoundary": 38.05,
+      "savedV4cManualMs": -80,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 38.05,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_032",
+      "index": 32,
+      "v4cBoundary": 39.21,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 39.21,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_033",
+      "index": 33,
+      "v4cBoundary": 40.04,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 40.04,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_034",
+      "index": 34,
+      "v4cBoundary": 40.59,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 40.59,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_035",
+      "index": 35,
+      "v4cBoundary": 41.36,
+      "savedV4cManualMs": -80,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 41.36,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_036",
+      "index": 36,
+      "v4cBoundary": 42.36,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 42.36,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_037",
+      "index": 37,
+      "v4cBoundary": 43.5,
+      "savedV4cManualMs": 80,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 43.5,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_038",
+      "index": 38,
+      "v4cBoundary": 44.48,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 44.48,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_039",
+      "index": 39,
+      "v4cBoundary": 46.42,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 46.42,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_040",
+      "index": 40,
+      "v4cBoundary": 47.31,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 47.31,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_041",
+      "index": 41,
+      "v4cBoundary": 48.29,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 48.29,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_042",
+      "index": 42,
+      "v4cBoundary": 49.15,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 49.15,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_043",
+      "index": 43,
+      "v4cBoundary": 50.08,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 50.08,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_044",
+      "index": 44,
+      "v4cBoundary": 51.2,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 51.2,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_045",
+      "index": 45,
+      "v4cBoundary": 53.08,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 53.08,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_046",
+      "index": 46,
+      "v4cBoundary": 53.63,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 53.63,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_047",
+      "index": 47,
+      "v4cBoundary": 54.62,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 54.62,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_048",
+      "index": 48,
+      "v4cBoundary": 56.0,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 56.0,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_049",
+      "index": 49,
+      "v4cBoundary": 56.98,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 56.98,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_050",
+      "index": 50,
+      "v4cBoundary": 57.66,
+      "savedV4cManualMs": 0,
+      "candidates": [
+        {
+          "type": "TAIL",
+          "fragment": {
+            "startSample": 28853,
+            "endSample": 29988,
+            "peakRms": 0.08385837962851217,
+            "durationMs": 25.736961451247165
+          },
+          "fragmentSourceStart": 57.63426303854875,
+          "fragmentSourceEnd": 57.66,
+          "fragmentDurationMs": 25.736961451247165,
+          "fragmentRelativePeak": 0.34154475373954785,
+          "isolationSilenceMs": 114.73922902494331,
+          "gapSourceStart": 57.51952380952381,
+          "gapSourceEnd": 57.63426303854875,
+          "mainActiveMs": 209.52380952380952,
+          "mainSpanMs": 209.52380952380952,
+          "distanceFromEdgeMs": 0.0,
+          "silenceBeforeFragmentMs": 114.73922902494331,
+          "silenceAfterFragmentMs": 0.0,
+          "proposedCutSample": 2539141,
+          "reasons": [],
+          "deltaMs": -83.10657596371883,
+          "neighborEdgeDistanceMs": 0.0,
+          "neighborCluster": {
+            "startSample": 0,
+            "endSample": 15435,
+            "peakRms": 0.14143378736340598,
+            "durationMs": 350.0
+          },
+          "confidence": "STRUCTURAL_HIGH"
+        }
+      ],
+      "status": "REPAIRED",
+      "finalBoundary": 57.57689342403628,
+      "appliedDeltaMs": -83.10657596371883,
+      "repairType": "TAIL",
+      "postVerification": {
+        "remainingCandidateCount": 0,
+        "masterCutRms": 7.033368116718316e-06,
+        "quietThresholdRms": 0.004887298351911763,
+        "fragmentTransferred": true,
+        "noSourceDeletionOrDuplication": true,
+        "passed": true
+      }
+    },
+    {
+      "boundaryId": "boundary_051",
+      "index": 51,
+      "v4cBoundary": 58.48,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 58.48,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_052",
+      "index": 52,
+      "v4cBoundary": 59.2,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 59.2,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_053",
+      "index": 53,
+      "v4cBoundary": 60.16,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 60.16,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_054",
+      "index": 54,
+      "v4cBoundary": 60.71,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 60.71,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_055",
+      "index": 55,
+      "v4cBoundary": 61.47,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 61.47,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_056",
+      "index": 56,
+      "v4cBoundary": 62.47,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 62.47,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_057",
+      "index": 57,
+      "v4cBoundary": 63.12,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 63.12,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_058",
+      "index": 58,
+      "v4cBoundary": 64.1,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 64.1,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_059",
+      "index": 59,
+      "v4cBoundary": 65.26,
+      "savedV4cManualMs": 0,
+      "candidates": [
+        {
+          "type": "TAIL",
+          "fragment": {
+            "startSample": 50461,
+            "endSample": 51156,
+            "peakRms": 0.1607142085995986,
+            "durationMs": 15.759637188208616
+          },
+          "fragmentSourceStart": 65.2442403628118,
+          "fragmentSourceEnd": 65.26,
+          "fragmentDurationMs": 15.759637188208616,
+          "fragmentRelativePeak": 0.9663768499696103,
+          "isolationSilenceMs": 244.44444444444446,
+          "gapSourceStart": 64.99979591836734,
+          "gapSourceEnd": 65.2442403628118,
+          "mainActiveMs": 89.79591836734694,
+          "mainSpanMs": 89.79591836734694,
+          "distanceFromEdgeMs": 0.0,
+          "silenceBeforeFragmentMs": 244.44444444444446,
+          "silenceAfterFragmentMs": 0.0,
+          "proposedCutSample": 2871881,
+          "reasons": [
+            "INSUFFICIENT_MAIN_SPEECH_EVIDENCE",
+            "NEIGHBOR_DOES_NOT_CORROBORATE_FRAGMENT_OWNERSHIP"
+          ],
+          "deltaMs": -137.98185941043084,
+          "neighborEdgeDistanceMs": 0.0,
+          "neighborCluster": {
+            "startSample": 0,
+            "endSample": 3740,
+            "peakRms": 0.17052594085041953,
+            "durationMs": 84.80725623582767
+          },
+          "confidence": "UNCERTAIN"
+        },
+        {
+          "type": "HEAD",
+          "fragment": {
+            "startSample": 0,
+            "endSample": 3740,
+            "peakRms": 0.17052594085041953,
+            "durationMs": 84.80725623582767
+          },
+          "fragmentSourceStart": 65.26,
+          "fragmentSourceEnd": 65.34480725623582,
+          "fragmentDurationMs": 84.80725623582767,
+          "fragmentRelativePeak": 1.26643763880699,
+          "isolationSilenceMs": 64.85260770975057,
+          "gapSourceStart": 65.34480725623582,
+          "gapSourceEnd": 65.40965986394558,
+          "mainActiveMs": 169.61451247165533,
+          "mainSpanMs": 189.56916099773244,
+          "distanceFromEdgeMs": 0.0,
+          "silenceBeforeFragmentMs": 0.0,
+          "silenceAfterFragmentMs": 64.85260770975057,
+          "proposedCutSample": 2883136,
+          "reasons": [
+            "NEIGHBOR_DOES_NOT_CORROBORATE_FRAGMENT_OWNERSHIP"
+          ],
+          "deltaMs": 117.23356009070295,
+          "neighborEdgeDistanceMs": 0.0,
+          "neighborCluster": {
+            "startSample": 50461,
+            "endSample": 51156,
+            "peakRms": 0.1607142085995986,
+            "durationMs": 15.759637188208616
+          },
+          "confidence": "UNCERTAIN"
+        }
+      ],
+      "status": "UNCERTAIN_CONFLICTING_HEAD_TAIL",
+      "finalBoundary": 65.26,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_060",
+      "index": 60,
+      "v4cBoundary": 66.36,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 66.36,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_061",
+      "index": 61,
+      "v4cBoundary": 66.95,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 66.95,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_062",
+      "index": 62,
+      "v4cBoundary": 67.9,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 67.9,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_063",
+      "index": 63,
+      "v4cBoundary": 69.81,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 69.81,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_064",
+      "index": 64,
+      "v4cBoundary": 71.34,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 71.34,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_065",
+      "index": 65,
+      "v4cBoundary": 72.35,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 72.35,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_066",
+      "index": 66,
+      "v4cBoundary": 73.03,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 73.03,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_067",
+      "index": 67,
+      "v4cBoundary": 73.68,
+      "savedV4cManualMs": 0,
+      "candidates": [
+        {
+          "type": "TAIL",
+          "fragment": {
+            "startSample": 26870,
+            "endSample": 28665,
+            "peakRms": 0.12946315378184123,
+            "durationMs": 40.702947845804985
+          },
+          "fragmentSourceStart": 73.63929705215419,
+          "fragmentSourceEnd": 73.68,
+          "fragmentDurationMs": 40.702947845804985,
+          "fragmentRelativePeak": 0.886855372966414,
+          "isolationSilenceMs": 179.59183673469389,
+          "gapSourceStart": 73.4597052154195,
+          "gapSourceEnd": 73.63929705215419,
+          "mainActiveMs": 129.70521541950114,
+          "mainSpanMs": 129.70521541950114,
+          "distanceFromEdgeMs": 0.0,
+          "silenceBeforeFragmentMs": 179.59183673469389,
+          "silenceAfterFragmentMs": 0.0,
+          "proposedCutSample": 3243533,
+          "reasons": [
+            "NEIGHBOR_DOES_NOT_CORROBORATE_FRAGMENT_OWNERSHIP"
+          ],
+          "deltaMs": -130.49886621315193,
+          "neighborEdgeDistanceMs": 154.6485260770975,
+          "neighborCluster": {
+            "startSample": 6820,
+            "endSample": 12540,
+            "peakRms": 0.31830467715554994,
+            "durationMs": 129.70521541950114
+          },
+          "confidence": "UNCERTAIN"
+        }
+      ],
+      "status": "UNCERTAIN",
+      "finalBoundary": 73.68,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_068",
+      "index": 68,
+      "v4cBoundary": 75.02,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 75.02,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_069",
+      "index": 69,
+      "v4cBoundary": 75.97,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 75.97,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_070",
+      "index": 70,
+      "v4cBoundary": 77.1,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 77.1,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_071",
+      "index": 71,
+      "v4cBoundary": 78.39,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 78.39,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_072",
+      "index": 72,
+      "v4cBoundary": 79.66,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 79.66,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_073",
+      "index": 73,
+      "v4cBoundary": 80.44,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 80.44,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_074",
+      "index": 74,
+      "v4cBoundary": 81.33,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 81.33,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_075",
+      "index": 75,
+      "v4cBoundary": 82.93,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 82.93,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_076",
+      "index": 76,
+      "v4cBoundary": 84.02,
+      "savedV4cManualMs": 0,
+      "candidates": [
+        {
+          "type": "HEAD",
+          "fragment": {
+            "startSample": 0,
+            "endSample": 880,
+            "peakRms": 0.015357308019627265,
+            "durationMs": 19.954648526077097
+          },
+          "fragmentSourceStart": 84.02,
+          "fragmentSourceEnd": 84.03995464852608,
+          "fragmentDurationMs": 19.954648526077097,
+          "fragmentRelativePeak": 0.09640916880733054,
+          "isolationSilenceMs": 259.4104308390023,
+          "gapSourceStart": 84.03995464852608,
+          "gapSourceEnd": 84.29936507936507,
+          "mainActiveMs": 70.63492063492063,
+          "mainSpanMs": 70.63492063492063,
+          "distanceFromEdgeMs": 0.0,
+          "silenceBeforeFragmentMs": 0.0,
+          "silenceAfterFragmentMs": 259.4104308390023,
+          "proposedCutSample": 3711882,
+          "reasons": [
+            "INSUFFICIENT_MAIN_SPEECH_EVIDENCE"
+          ],
+          "deltaMs": 149.65986394557822,
+          "neighborEdgeDistanceMs": 0.0,
+          "neighborCluster": {
+            "startSample": 35714,
+            "endSample": 48069,
+            "peakRms": 0.1596072411065908,
+            "durationMs": 280.1587301587302
+          },
+          "confidence": "UNCERTAIN"
+        }
+      ],
+      "status": "UNCERTAIN",
+      "finalBoundary": 84.02,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_077",
+      "index": 77,
+      "v4cBoundary": 85.09,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 85.09,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_078",
+      "index": 78,
+      "v4cBoundary": 86.54,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 86.54,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_079",
+      "index": 79,
+      "v4cBoundary": 87.44,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 87.44,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_080",
+      "index": 80,
+      "v4cBoundary": 88.89,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 88.89,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_081",
+      "index": 81,
+      "v4cBoundary": 90.34,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 90.34,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_082",
+      "index": 82,
+      "v4cBoundary": 91.72,
+      "savedV4cManualMs": 0,
+      "candidates": [
+        {
+          "type": "TAIL",
+          "fragment": {
+            "startSample": 58843,
+            "endSample": 60858,
+            "peakRms": 0.08681218847087274,
+            "durationMs": 45.69160997732426
+          },
+          "fragmentSourceStart": 91.67430839002267,
+          "fragmentSourceEnd": 91.72,
+          "fragmentDurationMs": 45.69160997732426,
+          "fragmentRelativePeak": 0.44958323982725884,
+          "isolationSilenceMs": 164.62585034013605,
+          "gapSourceStart": 91.50968253968254,
+          "gapSourceEnd": 91.67430839002267,
+          "mainActiveMs": 139.68253968253967,
+          "mainSpanMs": 139.68253968253967,
+          "distanceFromEdgeMs": 0.0,
+          "silenceBeforeFragmentMs": 164.62585034013605,
+          "silenceAfterFragmentMs": 0.0,
+          "proposedCutSample": 4039207,
+          "reasons": [],
+          "deltaMs": -128.0045351473923,
+          "neighborEdgeDistanceMs": 0.0,
+          "neighborCluster": {
+            "startSample": 0,
+            "endSample": 12320,
+            "peakRms": 0.2224391445462578,
+            "durationMs": 279.36507936507934
+          },
+          "confidence": "STRUCTURAL_HIGH"
+        }
+      ],
+      "status": "REPAIRED",
+      "finalBoundary": 91.5919954648526,
+      "appliedDeltaMs": -128.0045351473923,
+      "repairType": "TAIL",
+      "postVerification": {
+        "remainingCandidateCount": 0,
+        "masterCutRms": 2.5682229151761665e-05,
+        "quietThresholdRms": 0.003843621343065983,
+        "fragmentTransferred": true,
+        "noSourceDeletionOrDuplication": true,
+        "passed": true
+      }
+    },
+    {
+      "boundaryId": "boundary_083",
+      "index": 83,
+      "v4cBoundary": 92.66,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 92.66,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_084",
+      "index": 84,
+      "v4cBoundary": 93.42,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 93.42,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_085",
+      "index": 85,
+      "v4cBoundary": 94.77,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 94.77,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_086",
+      "index": 86,
+      "v4cBoundary": 96.06,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 96.06,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_087",
+      "index": 87,
+      "v4cBoundary": 96.72,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 96.72,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_088",
+      "index": 88,
+      "v4cBoundary": 98.28,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 98.28,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_089",
+      "index": 89,
+      "v4cBoundary": 99.58,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 99.58,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_090",
+      "index": 90,
+      "v4cBoundary": 100.52,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 100.52,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_091",
+      "index": 91,
+      "v4cBoundary": 101.57,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 101.57,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_092",
+      "index": 92,
+      "v4cBoundary": 102.3,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 102.3,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_093",
+      "index": 93,
+      "v4cBoundary": 102.82,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 102.82,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_094",
+      "index": 94,
+      "v4cBoundary": 104.65,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 104.65,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_095",
+      "index": 95,
+      "v4cBoundary": 105.82,
+      "savedV4cManualMs": 0,
+      "candidates": [],
+      "status": "UNCHANGED_NO_FRAGMENT",
+      "finalBoundary": 105.82,
+      "appliedDeltaMs": 0
+    },
+    {
+      "boundaryId": "boundary_096",
+      "index": 96,
+      "v4cBoundary": 106.85,
+      "savedV4cManualMs": 0,
+      "candidates": [
+        {
+          "type": "TAIL",
+          "fragment": {
+            "startSample": 42748,
+            "endSample": 45423,
+            "peakRms": 0.08046838614873361,
+            "durationMs": 60.657596371882086
+          },
+          "fragmentSourceStart": 106.78934240362811,
+          "fragmentSourceEnd": 106.85,
+          "fragmentDurationMs": 60.657596371882086,
+          "fragmentRelativePeak": 0.5122723719498213,
+          "isolationSilenceMs": 119.72789115646259,
+          "gapSourceStart": 106.66961451247165,
+          "gapSourceEnd": 106.78934240362811,
+          "mainActiveMs": 169.61451247165533,
+          "mainSpanMs": 169.61451247165533,
+          "distanceFromEdgeMs": 0.0,
+          "silenceBeforeFragmentMs": 119.72789115646259,
+          "silenceAfterFragmentMs": 0.0,
+          "proposedCutSample": 4706770,
+          "reasons": [],
+          "deltaMs": -120.52154195011337,
+          "neighborEdgeDistanceMs": 0.0,
+          "neighborCluster": {
+            "startSample": 0,
+            "endSample": 4620,
+            "peakRms": 0.17575223012782018,
+            "durationMs": 104.76190476190476
+          },
+          "confidence": "STRUCTURAL_HIGH"
+        }
+      ],
+      "status": "REPAIRED",
+      "finalBoundary": 106.72947845804988,
+      "appliedDeltaMs": -120.52154195011337,
+      "repairType": "TAIL",
+      "postVerification": {
+        "remainingCandidateCount": 0,
+        "masterCutRms": 2.928224654060333e-06,
+        "quietThresholdRms": 0.003126758662266536,
+        "fragmentTransferred": true,
+        "noSourceDeletionOrDuplication": true,
+        "passed": true
+      }
+    }
+  ],
+  "phraseEdgeScans": [
+    {
+      "phrase": 1,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.010117400849633564,
+        "offThresholdRms": 0.005058700424816782,
+        "noiseFloorRms": 1.9273575401016642e-05,
+        "measuredFloorRms": 1.9273575401016642e-05,
+        "edgePeakRms": 0.2541376191633804,
+        "clusters": [
+          {
+            "startSample": 4620,
+            "endSample": 15435,
+            "peakRms": 0.2541376191633804,
+            "durationMs": 245.23809523809524
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 10143,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.00970334377613339,
+        "offThresholdRms": 0.004851671888066695,
+        "noiseFloorRms": 3.5636853523018932e-06,
+        "measuredFloorRms": 3.5636853523018932e-06,
+        "edgePeakRms": 0.2437369757154239,
+        "clusters": [
+          {
+            "startSample": 10143,
+            "endSample": 20483,
+            "peakRms": 0.2437369757154239,
+            "durationMs": 234.4671201814059
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 2,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.11487421927179775,
+        "offThresholdRms": 0.057437109635898875,
+        "noiseFloorRms": 0.02885509927190851,
+        "measuredFloorRms": 0.041365155713974526,
+        "edgePeakRms": 0.22920420067448988,
+        "clusters": [
+          {
+            "startSample": 3300,
+            "endSample": 8360,
+            "peakRms": 0.22920420067448988,
+            "durationMs": 114.73922902494331
+          },
+          {
+            "startSample": 10120,
+            "endSample": 14520,
+            "peakRms": 0.15280434016623215,
+            "durationMs": 99.77324263038548
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 32193,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.057829989202241486,
+        "offThresholdRms": 0.028914994601120743,
+        "noiseFloorRms": 0.014526236521145592,
+        "measuredFloorRms": 0.014526236521145592,
+        "edgePeakRms": 0.15593175205859627,
+        "clusters": [
+          {
+            "startSample": 32193,
+            "endSample": 34173,
+            "peakRms": 0.12449497650075,
+            "durationMs": 44.89795918367347
+          },
+          {
+            "startSample": 36593,
+            "endSample": 45613,
+            "peakRms": 0.15593175205859627,
+            "durationMs": 204.53514739229024
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 3,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.009086580418018199,
+        "offThresholdRms": 0.004543290209009099,
+        "noiseFloorRms": 4.4771198081337e-05,
+        "measuredFloorRms": 4.4771198081337e-05,
+        "edgePeakRms": 0.22824458060840555,
+        "clusters": [
+          {
+            "startSample": 8360,
+            "endSample": 12540,
+            "peakRms": 0.22824458060840555,
+            "durationMs": 94.78458049886622
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 42336,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.006129460934754466,
+        "offThresholdRms": 0.003064730467377233,
+        "noiseFloorRms": 4.241633980885081e-06,
+        "measuredFloorRms": 4.241633980885081e-06,
+        "edgePeakRms": 0.1539650975447777,
+        "clusters": [
+          {
+            "startSample": 42336,
+            "endSample": 52456,
+            "peakRms": 0.1539650975447777,
+            "durationMs": 229.47845804988663
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 4,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.08611817899559898,
+        "offThresholdRms": 0.04305908949779949,
+        "noiseFloorRms": 0.02163190853253584,
+        "measuredFloorRms": 0.03420036514079523,
+        "edgePeakRms": 0.17182835718366316,
+        "clusters": [
+          {
+            "startSample": 0,
+            "endSample": 5720,
+            "peakRms": 0.17182835718366316,
+            "durationMs": 129.70521541950114
+          },
+          {
+            "startSample": 7920,
+            "endSample": 11220,
+            "peakRms": 0.16689577230483327,
+            "durationMs": 74.82993197278911
+          },
+          {
+            "startSample": 14080,
+            "endSample": 15435,
+            "peakRms": 0.12549586408952618,
+            "durationMs": 30.72562358276644
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 56448,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.006281307926910006,
+        "offThresholdRms": 0.003140653963455003,
+        "noiseFloorRms": 3.4992535223928125e-05,
+        "measuredFloorRms": 3.4992535223928125e-05,
+        "edgePeakRms": 0.1577793215373881,
+        "clusters": [
+          {
+            "startSample": 56448,
+            "endSample": 66348,
+            "peakRms": 0.1577793215373881,
+            "durationMs": 224.48979591836735
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 5,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.008417336248658916,
+        "offThresholdRms": 0.004208668124329458,
+        "noiseFloorRms": 0.00031245480557399427,
+        "measuredFloorRms": 0.00031245480557399427,
+        "edgePeakRms": 0.21143392712460074,
+        "clusters": [
+          {
+            "startSample": 2860,
+            "endSample": 15435,
+            "peakRms": 0.21143392712460074,
+            "durationMs": 285.14739229024946
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 37485,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.07859875925460637,
+        "offThresholdRms": 0.039299379627303184,
+        "noiseFloorRms": 0.019743115690513378,
+        "measuredFloorRms": 0.02645649989985969,
+        "edgePeakRms": 0.15682514234402756,
+        "clusters": [
+          {
+            "startSample": 37485,
+            "endSample": 40345,
+            "peakRms": 0.12429788684523034,
+            "durationMs": 64.85260770975057
+          },
+          {
+            "startSample": 43645,
+            "endSample": 51125,
+            "peakRms": 0.15682514234402756,
+            "durationMs": 169.61451247165533
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 6,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.005918648680647919,
+        "offThresholdRms": 0.0029593243403239597,
+        "noiseFloorRms": 1.4548684528283573e-06,
+        "measuredFloorRms": 1.4548684528283573e-06,
+        "edgePeakRms": 0.14866973313791584,
+        "clusters": [
+          {
+            "startSample": 4400,
+            "endSample": 15435,
+            "peakRms": 0.14866973313791584,
+            "durationMs": 250.22675736961452
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 18963,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.007188841853258015,
+        "offThresholdRms": 0.0035944209266290075,
+        "noiseFloorRms": 0.001640954892733415,
+        "measuredFloorRms": 0.001640954892733415,
+        "edgePeakRms": 0.1805755430946699,
+        "clusters": [
+          {
+            "startSample": 18963,
+            "endSample": 19623,
+            "peakRms": 0.0077294481407982505,
+            "durationMs": 14.965986394557824
+          },
+          {
+            "startSample": 22483,
+            "endSample": 33923,
+            "peakRms": 0.1805755430946699,
+            "durationMs": 259.4104308390023
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 7,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.00783710703555968,
+        "offThresholdRms": 0.00391855351777984,
+        "noiseFloorRms": 2.0574946974586246e-06,
+        "measuredFloorRms": 2.0574946974586246e-06,
+        "edgePeakRms": 0.19685922824910623,
+        "clusters": [
+          {
+            "startSample": 5720,
+            "endSample": 15435,
+            "peakRms": 0.19685922824910623,
+            "durationMs": 220.29478458049886
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 44100,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.004285950998066381,
+        "offThresholdRms": 0.0021429754990331903,
+        "noiseFloorRms": 0.0,
+        "measuredFloorRms": 0.0,
+        "edgePeakRms": 0.10765822158157883,
+        "clusters": [
+          {
+            "startSample": 44100,
+            "endSample": 49820,
+            "peakRms": 0.10765822158157883,
+            "durationMs": 129.70521541950114
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 8,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.021640766658640974,
+        "offThresholdRms": 0.010820383329320487,
+        "noiseFloorRms": 0.005435914813730518,
+        "measuredFloorRms": 0.005435914813730518,
+        "edgePeakRms": 0.20459345325078038,
+        "clusters": [
+          {
+            "startSample": 2860,
+            "endSample": 11220,
+            "peakRms": 0.20459345325078038,
+            "durationMs": 189.56916099773244
+          },
+          {
+            "startSample": 12540,
+            "endSample": 15435,
+            "peakRms": 0.14834032215524923,
+            "durationMs": 65.64625850340136
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 41454,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.006554193271892433,
+        "offThresholdRms": 0.0032770966359462164,
+        "noiseFloorRms": 3.5636853523018932e-06,
+        "measuredFloorRms": 3.5636853523018932e-06,
+        "edgePeakRms": 0.16463389149157978,
+        "clusters": [
+          {
+            "startSample": 41454,
+            "endSample": 53994,
+            "peakRms": 0.16463389149157978,
+            "durationMs": 284.3537414965986
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 9,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.008566000648400122,
+        "offThresholdRms": 0.004283000324200061,
+        "noiseFloorRms": 0.0,
+        "measuredFloorRms": 0.0,
+        "edgePeakRms": 0.2151682080101853,
+        "clusters": [
+          {
+            "startSample": 8800,
+            "endSample": 15435,
+            "peakRms": 0.2151682080101853,
+            "durationMs": 150.45351473922904
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 6174,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.008572061548969254,
+        "offThresholdRms": 0.004286030774484627,
+        "noiseFloorRms": 0.0,
+        "measuredFloorRms": 0.0,
+        "edgePeakRms": 0.2153204509492086,
+        "clusters": [
+          {
+            "startSample": 8814,
+            "endSample": 17614,
+            "peakRms": 0.2153204509492086,
+            "durationMs": 199.54648526077096
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 10,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.008896788559937864,
+        "offThresholdRms": 0.004448394279968932,
+        "noiseFloorRms": 0.00013194862841186286,
+        "measuredFloorRms": 0.00013194862841186286,
+        "edgePeakRms": 0.22347722467717573,
+        "clusters": [
+          {
+            "startSample": 3080,
+            "endSample": 14520,
+            "peakRms": 0.22347722467717573,
+            "durationMs": 259.4104308390023
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 41454,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.029585945652397406,
+        "offThresholdRms": 0.014792972826198703,
+        "noiseFloorRms": 0.00743165354476369,
+        "measuredFloorRms": 0.00743165354476369,
+        "edgePeakRms": 0.17027876398668254,
+        "clusters": [
+          {
+            "startSample": 41454,
+            "endSample": 44534,
+            "peakRms": 0.10342980601755417,
+            "durationMs": 69.84126984126983
+          },
+          {
+            "startSample": 46514,
+            "endSample": 55754,
+            "peakRms": 0.17027876398668254,
+            "durationMs": 209.52380952380952
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 11,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.0060053021077201936,
+        "offThresholdRms": 0.0030026510538600968,
+        "noiseFloorRms": 3.0862420461879367e-06,
+        "measuredFloorRms": 3.0862420461879367e-06,
+        "edgePeakRms": 0.15084636881498234,
+        "clusters": [
+          {
+            "startSample": 5500,
+            "endSample": 15435,
+            "peakRms": 0.15084636881498234,
+            "durationMs": 225.28344671201813
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 20727,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.0038604602312908897,
+        "offThresholdRms": 0.0019302301156454448,
+        "noiseFloorRms": 0.0,
+        "measuredFloorRms": 0.0,
+        "edgePeakRms": 0.09697037674361919,
+        "clusters": [
+          {
+            "startSample": 20727,
+            "endSample": 29967,
+            "peakRms": 0.09697037674361919,
+            "durationMs": 209.52380952380952
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 12,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.03262491356980953,
+        "offThresholdRms": 0.016312456784904766,
+        "noiseFloorRms": 0.008195007772517734,
+        "measuredFloorRms": 0.008195007772517734,
+        "edgePeakRms": 0.21695770189781782,
+        "clusters": [
+          {
+            "startSample": 2200,
+            "endSample": 15435,
+            "peakRms": 0.21695770189781782,
+            "durationMs": 300.11337868480723
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 36162,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.005476488986813466,
+        "offThresholdRms": 0.002738244493406733,
+        "noiseFloorRms": 0.0,
+        "measuredFloorRms": 0.0,
+        "edgePeakRms": 0.1375631837828839,
+        "clusters": [
+          {
+            "startSample": 36162,
+            "endSample": 42762,
+            "peakRms": 0.1375631837828839,
+            "durationMs": 149.65986394557822
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 13,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.09199834370444451,
+        "offThresholdRms": 0.045999171852222256,
+        "noiseFloorRms": 0.0231089391272549,
+        "measuredFloorRms": 0.05090959052726627,
+        "edgePeakRms": 0.18356082823303263,
+        "clusters": [
+          {
+            "startSample": 1980,
+            "endSample": 15435,
+            "peakRms": 0.18356082823303263,
+            "durationMs": 305.1020408163265
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 93933,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.006795541306256381,
+        "offThresholdRms": 0.0033977706531281905,
+        "noiseFloorRms": 0.0,
+        "measuredFloorRms": 0.0,
+        "edgePeakRms": 0.17069628001948287,
+        "clusters": [
+          {
+            "startSample": 93933,
+            "endSample": 100313,
+            "peakRms": 0.17069628001948287,
+            "durationMs": 144.67120181405895
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 14,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.007855138792029032,
+        "offThresholdRms": 0.003927569396014516,
+        "noiseFloorRms": 0.0,
+        "measuredFloorRms": 0.0,
+        "edgePeakRms": 0.19731216549322275,
+        "clusters": [
+          {
+            "startSample": 6820,
+            "endSample": 15435,
+            "peakRms": 0.19731216549322275,
+            "durationMs": 195.3514739229025
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 52920,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.00857270470290058,
+        "offThresholdRms": 0.00428635235145029,
+        "noiseFloorRms": 0.0,
+        "measuredFloorRms": 0.0,
+        "edgePeakRms": 0.2153366062455433,
+        "clusters": [
+          {
+            "startSample": 52920,
+            "endSample": 59300,
+            "peakRms": 0.2153366062455433,
+            "durationMs": 144.67120181405895
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 15,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.007952385193314376,
+        "offThresholdRms": 0.003976192596657188,
+        "noiseFloorRms": 0.0004307798911250056,
+        "measuredFloorRms": 0.0004307798911250056,
+        "edgePeakRms": 0.19975488465224064,
+        "clusters": [
+          {
+            "startSample": 1980,
+            "endSample": 15435,
+            "peakRms": 0.19975488465224064,
+            "durationMs": 305.1020408163265
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 44982,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.008730254267239378,
+        "offThresholdRms": 0.004365127133619689,
+        "noiseFloorRms": 2.594402097557714e-05,
+        "measuredFloorRms": 2.594402097557714e-05,
+        "edgePeakRms": 0.219294072375072,
+        "clusters": [
+          {
+            "startSample": 44982,
+            "endSample": 57302,
+            "peakRms": 0.219294072375072,
+            "durationMs": 279.36507936507934
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 16,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.007172294141633191,
+        "offThresholdRms": 0.0035861470708165957,
+        "noiseFloorRms": 0.0006280618412850648,
+        "measuredFloorRms": 0.0006280618412850648,
+        "edgePeakRms": 0.1801598833716406,
+        "clusters": [
+          {
+            "startSample": 2200,
+            "endSample": 11220,
+            "peakRms": 0.1801598833716406,
+            "durationMs": 204.53514739229024
+          },
+          {
+            "startSample": 12100,
+            "endSample": 15435,
+            "peakRms": 0.13487017015151112,
+            "durationMs": 75.62358276643991
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 29547,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.005446720828138808,
+        "offThresholdRms": 0.002723360414069404,
+        "noiseFloorRms": 0.0,
+        "measuredFloorRms": 0.0,
+        "edgePeakRms": 0.13681544144422492,
+        "clusters": [
+          {
+            "startSample": 29547,
+            "endSample": 38347,
+            "peakRms": 0.13681544144422492,
+            "durationMs": 199.54648526077096
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 17,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.07571205574113998,
+        "offThresholdRms": 0.03785602787056999,
+        "noiseFloorRms": 0.019018008551786654,
+        "measuredFloorRms": 0.021842963398836127,
+        "edgePeakRms": 0.15106541160911982,
+        "clusters": [
+          {
+            "startSample": 2200,
+            "endSample": 9240,
+            "peakRms": 0.15106541160911982,
+            "durationMs": 159.63718820861678
+          },
+          {
+            "startSample": 10340,
+            "endSample": 15435,
+            "peakRms": 0.14249602179352697,
+            "durationMs": 115.53287981859411
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 59976,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.0067042174145618295,
+        "offThresholdRms": 0.0033521087072809147,
+        "noiseFloorRms": 8.604658312909964e-05,
+        "measuredFloorRms": 8.604658312909964e-05,
+        "edgePeakRms": 0.16840232757528092,
+        "clusters": [
+          {
+            "startSample": 59976,
+            "endSample": 73836,
+            "peakRms": 0.16840232757528092,
+            "durationMs": 314.2857142857143
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 18,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.005318745317516227,
+        "offThresholdRms": 0.0026593726587581133,
+        "noiseFloorRms": 0.0,
+        "measuredFloorRms": 0.0,
+        "edgePeakRms": 0.1336008419572412,
+        "clusters": [
+          {
+            "startSample": 12540,
+            "endSample": 15435,
+            "peakRms": 0.1336008419572412,
+            "durationMs": 65.64625850340136
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 41454,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.004688993775913382,
+        "offThresholdRms": 0.002344496887956691,
+        "noiseFloorRms": 1.3174394165686886e-05,
+        "measuredFloorRms": 1.3174394165686886e-05,
+        "edgePeakRms": 0.11778219843149694,
+        "clusters": [
+          {
+            "startSample": 41454,
+            "endSample": 51794,
+            "peakRms": 0.11778219843149694,
+            "durationMs": 234.4671201814059
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 19,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.04409676909517663,
+        "offThresholdRms": 0.022048384547588316,
+        "noiseFloorRms": 0.011076607596358517,
+        "measuredFloorRms": 0.011076607596358517,
+        "edgePeakRms": 0.195438603101324,
+        "clusters": [
+          {
+            "startSample": 3080,
+            "endSample": 15435,
+            "peakRms": 0.195438603101324,
+            "durationMs": 280.1587301587302
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 10143,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.00775793704586606,
+        "offThresholdRms": 0.00387896852293303,
+        "noiseFloorRms": 2.5698100534688857e-05,
+        "measuredFloorRms": 2.5698100534688857e-05,
+        "edgePeakRms": 0.19487056802016467,
+        "clusters": [
+          {
+            "startSample": 10143,
+            "endSample": 22463,
+            "peakRms": 0.19487056802016467,
+            "durationMs": 279.36507936507934
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 20,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.009023232127556402,
+        "offThresholdRms": 0.004511616063778201,
+        "noiseFloorRms": 2.5698100534688857e-05,
+        "measuredFloorRms": 2.5698100534688857e-05,
+        "edgePeakRms": 0.22665334349570243,
+        "clusters": [
+          {
+            "startSample": 3300,
+            "endSample": 15435,
+            "peakRms": 0.22665334349570243,
+            "durationMs": 275.1700680272109
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 20286,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.07293670650637521,
+        "offThresholdRms": 0.036468353253187605,
+        "noiseFloorRms": 0.018320872343236042,
+        "measuredFloorRms": 0.018320872343236042,
+        "edgePeakRms": 0.1761750786538465,
+        "clusters": [
+          {
+            "startSample": 20726,
+            "endSample": 31286,
+            "peakRms": 0.1761750786538465,
+            "durationMs": 239.45578231292518
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 21,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.006956825123690328,
+        "offThresholdRms": 0.003478412561845164,
+        "noiseFloorRms": 0.0,
+        "measuredFloorRms": 0.0,
+        "edgePeakRms": 0.17474754634582687,
+        "clusters": [
+          {
+            "startSample": 9240,
+            "endSample": 15435,
+            "peakRms": 0.17474754634582687,
+            "durationMs": 140.47619047619048
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 29988,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.00841337376702914,
+        "offThresholdRms": 0.00420668688351457,
+        "noiseFloorRms": 0.0001246356177669256,
+        "measuredFloorRms": 0.0001246356177669256,
+        "edgePeakRms": 0.21133439408619137,
+        "clusters": [
+          {
+            "startSample": 30868,
+            "endSample": 43188,
+            "peakRms": 0.21133439408619137,
+            "durationMs": 279.36507936507934
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 22,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.009097131165926083,
+        "offThresholdRms": 0.004548565582963042,
+        "noiseFloorRms": 1.0287473487293123e-06,
+        "measuredFloorRms": 1.0287473487293123e-06,
+        "edgePeakRms": 0.2285096034135265,
+        "clusters": [
+          {
+            "startSample": 3960,
+            "endSample": 15435,
+            "peakRms": 0.2285096034135265,
+            "durationMs": 260.2040816326531
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 4410,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.08247351957712486,
+        "offThresholdRms": 0.04123675978856243,
+        "noiseFloorRms": 0.020716411478461965,
+        "measuredFloorRms": 0.020716411478461965,
+        "edgePeakRms": 0.22863352980353507,
+        "clusters": [
+          {
+            "startSample": 4410,
+            "endSample": 17610,
+            "peakRms": 0.22863352980353507,
+            "durationMs": 299.31972789115645
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 23,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.0072294360572659686,
+        "offThresholdRms": 0.0036147180286329843,
+        "noiseFloorRms": 1.0287473487293123e-06,
+        "measuredFloorRms": 1.0287473487293123e-06,
+        "edgePeakRms": 0.18159522339712497,
+        "clusters": [
+          {
+            "startSample": 9240,
+            "endSample": 14080,
+            "peakRms": 0.18159522339712497,
+            "durationMs": 109.75056689342404
+          },
+          {
+            "startSample": 14960,
+            "endSample": 15435,
+            "peakRms": 0.040164302803355804,
+            "durationMs": 10.770975056689343
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 64386,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.07675811320805793,
+        "offThresholdRms": 0.03837905660402897,
+        "noiseFloorRms": 0.0192807663075597,
+        "measuredFloorRms": 0.02392213020352234,
+        "edgePeakRms": 0.153152570652153,
+        "clusters": [
+          {
+            "startSample": 64386,
+            "endSample": 67026,
+            "peakRms": 0.14058841340163353,
+            "durationMs": 59.863945578231295
+          },
+          {
+            "startSample": 69886,
+            "endSample": 78246,
+            "peakRms": 0.153152570652153,
+            "durationMs": 189.56916099773244
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 24,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.007916658509971431,
+        "offThresholdRms": 0.003958329254985716,
+        "noiseFloorRms": 5.539974017810019e-06,
+        "measuredFloorRms": 5.539974017810019e-06,
+        "edgePeakRms": 0.19885747094092082,
+        "clusters": [
+          {
+            "startSample": 3300,
+            "endSample": 15435,
+            "peakRms": 0.19885747094092082,
+            "durationMs": 275.1700680272109
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 13671,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.007577122961227716,
+        "offThresholdRms": 0.003788561480613858,
+        "noiseFloorRms": 4.498344092634123e-05,
+        "measuredFloorRms": 4.498344092634123e-05,
+        "edgePeakRms": 0.19032872356187586,
+        "clusters": [
+          {
+            "startSample": 13671,
+            "endSample": 25551,
+            "peakRms": 0.19032872356187586,
+            "durationMs": 269.38775510204084
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 25,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.011254554017463302,
+        "offThresholdRms": 0.005627277008731651,
+        "noiseFloorRms": 2.5739250441806008e-05,
+        "measuredFloorRms": 2.5739250441806008e-05,
+        "edgePeakRms": 0.28270161529157695,
+        "clusters": [
+          {
+            "startSample": 2640,
+            "endSample": 15435,
+            "peakRms": 0.28270161529157695,
+            "durationMs": 290.13605442176873
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 19404,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.005825804976779758,
+        "offThresholdRms": 0.002912902488389879,
+        "noiseFloorRms": 0.0,
+        "measuredFloorRms": 0.0,
+        "edgePeakRms": 0.14633760473794055,
+        "clusters": [
+          {
+            "startSample": 19404,
+            "endSample": 28424,
+            "peakRms": 0.14633760473794055,
+            "durationMs": 204.53514739229024
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 26,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.009010385098473456,
+        "offThresholdRms": 0.004505192549236728,
+        "noiseFloorRms": 0.0006103610991686594,
+        "measuredFloorRms": 0.0006103610991686594,
+        "edgePeakRms": 0.2263306407153158,
+        "clusters": [
+          {
+            "startSample": 2860,
+            "endSample": 15435,
+            "peakRms": 0.2263306407153158,
+            "durationMs": 285.14739229024946
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 22050,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.008579063573710704,
+        "offThresholdRms": 0.004289531786855352,
+        "noiseFloorRms": 0.0,
+        "measuredFloorRms": 0.0,
+        "edgePeakRms": 0.21549633385862,
+        "clusters": [
+          {
+            "startSample": 22050,
+            "endSample": 29090,
+            "peakRms": 0.21549633385862,
+            "durationMs": 159.63718820861678
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 27,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.006637307817729532,
+        "offThresholdRms": 0.003318653908864766,
+        "noiseFloorRms": 0.0,
+        "measuredFloorRms": 0.0,
+        "edgePeakRms": 0.1667216344910727,
+        "clusters": [
+          {
+            "startSample": 5500,
+            "endSample": 15435,
+            "peakRms": 0.1667216344910727,
+            "durationMs": 225.28344671201813
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 53802,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.008069959724634526,
+        "offThresholdRms": 0.004034979862317263,
+        "noiseFloorRms": 4.512438155658027e-05,
+        "measuredFloorRms": 4.512438155658027e-05,
+        "edgePeakRms": 0.20270822335138247,
+        "clusters": [
+          {
+            "startSample": 53802,
+            "endSample": 66342,
+            "peakRms": 0.20270822335138247,
+            "durationMs": 284.3537414965986
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 28,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.0053000130636948655,
+        "offThresholdRms": 0.0026500065318474327,
+        "noiseFloorRms": 0.00040808995268073903,
+        "measuredFloorRms": 0.00040808995268073903,
+        "edgePeakRms": 0.1331303090151865,
+        "clusters": [
+          {
+            "startSample": 2640,
+            "endSample": 15435,
+            "peakRms": 0.1331303090151865,
+            "durationMs": 290.13605442176873
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 79821,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.00474169786172358,
+        "offThresholdRms": 0.00237084893086179,
+        "noiseFloorRms": 0.0,
+        "measuredFloorRms": 0.0,
+        "edgePeakRms": 0.11910606521181447,
+        "clusters": [
+          {
+            "startSample": 79821,
+            "endSample": 84221,
+            "peakRms": 0.11910606521181447,
+            "durationMs": 99.77324263038548
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 29,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.008894742291387713,
+        "offThresholdRms": 0.004447371145693857,
+        "noiseFloorRms": 0.00029073535824925445,
+        "measuredFloorRms": 0.00029073535824925445,
+        "edgePeakRms": 0.22342582473511224,
+        "clusters": [
+          {
+            "startSample": 2860,
+            "endSample": 15435,
+            "peakRms": 0.22342582473511224,
+            "durationMs": 285.14739229024946
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 77175,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.003025830606048838,
+        "offThresholdRms": 0.001512915303024419,
+        "noiseFloorRms": 0.0,
+        "measuredFloorRms": 0.0,
+        "edgePeakRms": 0.07600542843380484,
+        "clusters": [
+          {
+            "startSample": 77175,
+            "endSample": 80035,
+            "peakRms": 0.07600542843380484,
+            "durationMs": 64.85260770975057
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 30,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.008024642157713396,
+        "offThresholdRms": 0.004012321078856698,
+        "noiseFloorRms": 0.0005489637225264194,
+        "measuredFloorRms": 0.0005489637225264194,
+        "edgePeakRms": 0.20156989753680035,
+        "clusters": [
+          {
+            "startSample": 3300,
+            "endSample": 15435,
+            "peakRms": 0.20156989753680035,
+            "durationMs": 275.1700680272109
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 56448,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.007891455570546827,
+        "offThresholdRms": 0.003945727785273414,
+        "noiseFloorRms": 6.428642099896514e-05,
+        "measuredFloorRms": 6.428642099896514e-05,
+        "edgePeakRms": 0.19822440172517264,
+        "clusters": [
+          {
+            "startSample": 56448,
+            "endSample": 69868,
+            "peakRms": 0.19822440172517264,
+            "durationMs": 304.3083900226757
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 31,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.005489178408648897,
+        "offThresholdRms": 0.0027445892043244484,
+        "noiseFloorRms": 4.512438155658027e-05,
+        "measuredFloorRms": 4.512438155658027e-05,
+        "edgePeakRms": 0.1378819276482051,
+        "clusters": [
+          {
+            "startSample": 2420,
+            "endSample": 13640,
+            "peakRms": 0.1378819276482051,
+            "durationMs": 254.42176870748298
+          },
+          {
+            "startSample": 14520,
+            "endSample": 15435,
+            "peakRms": 0.04313398180866628,
+            "durationMs": 20.74829931972789
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 37485,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.0061780541199464795,
+        "offThresholdRms": 0.0030890270599732397,
+        "noiseFloorRms": 0.0,
+        "measuredFloorRms": 0.0,
+        "edgePeakRms": 0.15518570317025418,
+        "clusters": [
+          {
+            "startSample": 37485,
+            "endSample": 44525,
+            "peakRms": 0.15518570317025418,
+            "durationMs": 159.63718820861678
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 32,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.06729694638803325,
+        "offThresholdRms": 0.03364847319401663,
+        "noiseFloorRms": 0.01690422865141284,
+        "measuredFloorRms": 0.01690422865141284,
+        "edgePeakRms": 0.20812138595261195,
+        "clusters": [
+          {
+            "startSample": 3300,
+            "endSample": 15435,
+            "peakRms": 0.20812138595261195,
+            "durationMs": 275.1700680272109
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 35721,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.0037198007162122623,
+        "offThresholdRms": 0.0018599003581061312,
+        "noiseFloorRms": 0.0,
+        "measuredFloorRms": 0.0,
+        "edgePeakRms": 0.09343716946973198,
+        "clusters": [
+          {
+            "startSample": 35721,
+            "endSample": 43421,
+            "peakRms": 0.09343716946973198,
+            "durationMs": 174.6031746031746
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 33,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.011446912432827371,
+        "offThresholdRms": 0.005723456216413686,
+        "noiseFloorRms": 0.0024990968705292426,
+        "measuredFloorRms": 0.0024990968705292426,
+        "edgePeakRms": 0.28753344022697386,
+        "clusters": [
+          {
+            "startSample": 1100,
+            "endSample": 7260,
+            "peakRms": 0.1632943917579898,
+            "durationMs": 139.68253968253967
+          },
+          {
+            "startSample": 8580,
+            "endSample": 15435,
+            "peakRms": 0.28753344022697386,
+            "durationMs": 155.4421768707483
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 21168,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.010239447001611363,
+        "offThresholdRms": 0.005119723500805681,
+        "noiseFloorRms": 0.0,
+        "measuredFloorRms": 0.0,
+        "edgePeakRms": 0.2572032798950903,
+        "clusters": [
+          {
+            "startSample": 21168,
+            "endSample": 31508,
+            "peakRms": 0.2572032798950903,
+            "durationMs": 234.4671201814059
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 34,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.006692311478245062,
+        "offThresholdRms": 0.003346155739122531,
+        "noiseFloorRms": 2.300349003431424e-06,
+        "measuredFloorRms": 2.300349003431424e-06,
+        "edgePeakRms": 0.16810326397639588,
+        "clusters": [
+          {
+            "startSample": 4400,
+            "endSample": 15435,
+            "peakRms": 0.16810326397639588,
+            "durationMs": 250.22675736961452
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 8820,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.006532792115869138,
+        "offThresholdRms": 0.003266396057934569,
+        "noiseFloorRms": 2.4775516994811666e-05,
+        "measuredFloorRms": 2.4775516994811666e-05,
+        "edgePeakRms": 0.16409631875724445,
+        "clusters": [
+          {
+            "startSample": 8820,
+            "endSample": 17180,
+            "peakRms": 0.16409631875724445,
+            "durationMs": 189.56916099773244
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 35,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.005838913196221449,
+        "offThresholdRms": 0.0029194565981107245,
+        "noiseFloorRms": 0.0013821935604492932,
+        "measuredFloorRms": 0.0013821935604492932,
+        "edgePeakRms": 0.1466668683235089,
+        "clusters": [
+          {
+            "startSample": 660,
+            "endSample": 13420,
+            "peakRms": 0.1466668683235089,
+            "durationMs": 289.3424036281179
+          },
+          {
+            "startSample": 14520,
+            "endSample": 15435,
+            "peakRms": 0.09795402011860439,
+            "durationMs": 20.74829931972789
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 18522,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.008037909524639673,
+        "offThresholdRms": 0.0040189547623198365,
+        "noiseFloorRms": 4.933698964560419e-06,
+        "measuredFloorRms": 4.933698964560419e-06,
+        "edgePeakRms": 0.20190315872644007,
+        "clusters": [
+          {
+            "startSample": 18522,
+            "endSample": 19182,
+            "peakRms": 0.010663114005210835,
+            "durationMs": 14.965986394557824
+          },
+          {
+            "startSample": 21382,
+            "endSample": 27542,
+            "peakRms": 0.20190315872644007,
+            "durationMs": 139.68253968253967
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 36,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.007563518912862867,
+        "offThresholdRms": 0.0037817594564314334,
+        "noiseFloorRms": 0.00018937615311978578,
+        "measuredFloorRms": 0.00018937615311978578,
+        "edgePeakRms": 0.18998700531686322,
+        "clusters": [
+          {
+            "startSample": 2640,
+            "endSample": 15435,
+            "peakRms": 0.18998700531686322,
+            "durationMs": 290.13605442176873
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 28665,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.005784911138547964,
+        "offThresholdRms": 0.002892455569273982,
+        "noiseFloorRms": 2.4754149576438374e-05,
+        "measuredFloorRms": 2.4754149576438374e-05,
+        "edgePeakRms": 0.14531039796407264,
+        "clusters": [
+          {
+            "startSample": 28665,
+            "endSample": 39885,
+            "peakRms": 0.14531039796407264,
+            "durationMs": 254.42176870748298
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 37,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.007006891801196387,
+        "offThresholdRms": 0.0035034459005981937,
+        "noiseFloorRms": 5.807640975179644e-05,
+        "measuredFloorRms": 5.807640975179644e-05,
+        "edgePeakRms": 0.17600516442480924,
+        "clusters": [
+          {
+            "startSample": 3300,
+            "endSample": 15435,
+            "peakRms": 0.17600516442480924,
+            "durationMs": 275.1700680272109
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 34839,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.006435235990444005,
+        "offThresholdRms": 0.0032176179952220023,
+        "noiseFloorRms": 0.0013216737225590605,
+        "measuredFloorRms": 0.0013216737225590605,
+        "edgePeakRms": 0.16164581967958405,
+        "clusters": [
+          {
+            "startSample": 34839,
+            "endSample": 48259,
+            "peakRms": 0.16164581967958405,
+            "durationMs": 304.3083900226757
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 38,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.004643534614134753,
+        "offThresholdRms": 0.0023217673070673765,
+        "noiseFloorRms": 2.1725819062876428e-05,
+        "measuredFloorRms": 2.1725819062876428e-05,
+        "edgePeakRms": 0.11664031591490157,
+        "clusters": [
+          {
+            "startSample": 5500,
+            "endSample": 15435,
+            "peakRms": 0.11664031591490157,
+            "durationMs": 225.28344671201813
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 27783,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.04220393904251052,
+        "offThresholdRms": 0.02110196952125526,
+        "noiseFloorRms": 0.010601150183713959,
+        "measuredFloorRms": 0.010601150183713959,
+        "edgePeakRms": 0.12768311967785648,
+        "clusters": [
+          {
+            "startSample": 28003,
+            "endSample": 41423,
+            "peakRms": 0.12768311967785648,
+            "durationMs": 304.3083900226757
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 39,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.006978282136685334,
+        "offThresholdRms": 0.003489141068342667,
+        "noiseFloorRms": 0.0,
+        "measuredFloorRms": 0.0,
+        "edgePeakRms": 0.17528652214385568,
+        "clusters": [
+          {
+            "startSample": 9020,
+            "endSample": 15435,
+            "peakRms": 0.17528652214385568,
+            "durationMs": 145.46485260770976
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 70119,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.012142388661815145,
+        "offThresholdRms": 0.006071194330907572,
+        "noiseFloorRms": 0.003050030132572923,
+        "measuredFloorRms": 0.003050030132572923,
+        "edgePeakRms": 0.08735092856640576,
+        "clusters": [
+          {
+            "startSample": 70119,
+            "endSample": 83759,
+            "peakRms": 0.08735092856640576,
+            "durationMs": 309.297052154195
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 40,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.009247316206696837,
+        "offThresholdRms": 0.0046236581033484185,
+        "noiseFloorRms": 0.0,
+        "measuredFloorRms": 0.0,
+        "edgePeakRms": 0.2322820810748042,
+        "clusters": [
+          {
+            "startSample": 12760,
+            "endSample": 15435,
+            "peakRms": 0.2322820810748042,
+            "durationMs": 60.657596371882086
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 23814,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.10632174719350217,
+        "offThresholdRms": 0.05316087359675108,
+        "noiseFloorRms": 0.02670681541497499,
+        "measuredFloorRms": 0.0355535353558558,
+        "edgePeakRms": 0.21213977543684312,
+        "clusters": [
+          {
+            "startSample": 27114,
+            "endSample": 31294,
+            "peakRms": 0.13916258302957543,
+            "durationMs": 94.78458049886622
+          },
+          {
+            "startSample": 33714,
+            "endSample": 37454,
+            "peakRms": 0.21213977543684312,
+            "durationMs": 84.80725623582767
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 41,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.007168042532085811,
+        "offThresholdRms": 0.0035840212660429053,
+        "noiseFloorRms": 0.0,
+        "measuredFloorRms": 0.0,
+        "edgePeakRms": 0.18005308776829917,
+        "clusters": [
+          {
+            "startSample": 8360,
+            "endSample": 15435,
+            "peakRms": 0.18005308776829917,
+            "durationMs": 160.43083900226756
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 27783,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.008921803796137762,
+        "offThresholdRms": 0.004460901898068881,
+        "noiseFloorRms": 0.0,
+        "measuredFloorRms": 0.0,
+        "edgePeakRms": 0.22410557900109104,
+        "clusters": [
+          {
+            "startSample": 27783,
+            "endSample": 36143,
+            "peakRms": 0.22410557900109104,
+            "durationMs": 189.56916099773244
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 42,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.05559974621686914,
+        "offThresholdRms": 0.02779987310843457,
+        "noiseFloorRms": 0.013966024811752971,
+        "measuredFloorRms": 0.013966024811752971,
+        "edgePeakRms": 0.17756582163124057,
+        "clusters": [
+          {
+            "startSample": 1760,
+            "endSample": 15435,
+            "peakRms": 0.17756582163124057,
+            "durationMs": 310.0907029478458
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 22491,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.0059760801621133765,
+        "offThresholdRms": 0.0029880400810566882,
+        "noiseFloorRms": 5.5580925800528396e-05,
+        "measuredFloorRms": 5.5580925800528396e-05,
+        "edgePeakRms": 0.1501123467282616,
+        "clusters": [
+          {
+            "startSample": 22491,
+            "endSample": 33491,
+            "peakRms": 0.1501123467282616,
+            "durationMs": 249.4331065759637
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 43,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.004086673816166292,
+        "offThresholdRms": 0.002043336908083146,
+        "noiseFloorRms": 0.0,
+        "measuredFloorRms": 0.0,
+        "edgePeakRms": 0.10265260508833585,
+        "clusters": [
+          {
+            "startSample": 6160,
+            "endSample": 12100,
+            "peakRms": 0.10265260508833585,
+            "durationMs": 134.69387755102042
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 25578,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.009700774978966372,
+        "offThresholdRms": 0.004850387489483186,
+        "noiseFloorRms": 0.0002194634220163476,
+        "measuredFloorRms": 0.0002194634220163476,
+        "edgePeakRms": 0.24367245044793256,
+        "clusters": [
+          {
+            "startSample": 25578,
+            "endSample": 36138,
+            "peakRms": 0.24367245044793256,
+            "durationMs": 239.45578231292518
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 44,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.014135082152280985,
+        "offThresholdRms": 0.0070675410761404924,
+        "noiseFloorRms": 0.003550572106658784,
+        "measuredFloorRms": 0.003550572106658784,
+        "edgePeakRms": 0.1836830796222448,
+        "clusters": [
+          {
+            "startSample": 660,
+            "endSample": 6600,
+            "peakRms": 0.1836830796222448,
+            "durationMs": 134.69387755102042
+          },
+          {
+            "startSample": 8580,
+            "endSample": 15435,
+            "peakRms": 0.11846737454818873,
+            "durationMs": 155.4421768707483
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 33957,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.0089095704357093,
+        "offThresholdRms": 0.00445478521785465,
+        "noiseFloorRms": 0.0,
+        "measuredFloorRms": 0.0,
+        "edgePeakRms": 0.22379829088037084,
+        "clusters": [
+          {
+            "startSample": 33957,
+            "endSample": 41877,
+            "peakRms": 0.22379829088037084,
+            "durationMs": 179.59183673469389
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 45,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.009639679694586963,
+        "offThresholdRms": 0.004819839847293481,
+        "noiseFloorRms": 0.0,
+        "measuredFloorRms": 0.0,
+        "edgePeakRms": 0.242137806289314,
+        "clusters": [
+          {
+            "startSample": 3300,
+            "endSample": 15435,
+            "peakRms": 0.242137806289314,
+            "durationMs": 275.1700680272109
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 67473,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.0027199300247856034,
+        "offThresholdRms": 0.0013599650123928017,
+        "noiseFloorRms": 0.0,
+        "measuredFloorRms": 0.0,
+        "edgePeakRms": 0.06832155323914471,
+        "clusters": [
+          {
+            "startSample": 67473,
+            "endSample": 76713,
+            "peakRms": 0.06832155323914471,
+            "durationMs": 209.52380952380952
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 46,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.008930954330907044,
+        "offThresholdRms": 0.004465477165453522,
+        "noiseFloorRms": 0.0,
+        "measuredFloorRms": 0.0,
+        "edgePeakRms": 0.22433543004237122,
+        "clusters": [
+          {
+            "startSample": 7480,
+            "endSample": 15435,
+            "peakRms": 0.22433543004237122,
+            "durationMs": 180.38548752834467
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 8820,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.015506548844966626,
+        "offThresholdRms": 0.007753274422483313,
+        "noiseFloorRms": 0.0038950689643212225,
+        "measuredFloorRms": 0.0038950689643212225,
+        "edgePeakRms": 0.22065288928576232,
+        "clusters": [
+          {
+            "startSample": 8820,
+            "endSample": 22680,
+            "peakRms": 0.22065288928576232,
+            "durationMs": 314.2857142857143
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 47,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.0070499167230189475,
+        "offThresholdRms": 0.0035249583615094737,
+        "noiseFloorRms": 2.4775516994811666e-05,
+        "measuredFloorRms": 2.4775516994811666e-05,
+        "edgePeakRms": 0.17708590159823773,
+        "clusters": [
+          {
+            "startSample": 6380,
+            "endSample": 15435,
+            "peakRms": 0.17708590159823773,
+            "durationMs": 205.32879818594105
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 28224,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.008347769549066113,
+        "offThresholdRms": 0.004173884774533057,
+        "noiseFloorRms": 4.484205731546468e-06,
+        "measuredFloorRms": 4.484205731546468e-06,
+        "edgePeakRms": 0.20968649063668013,
+        "clusters": [
+          {
+            "startSample": 28224,
+            "endSample": 29984,
+            "peakRms": 0.05133166441373438,
+            "durationMs": 39.909297052154194
+          },
+          {
+            "startSample": 31084,
+            "endSample": 39224,
+            "peakRms": 0.20968649063668013,
+            "durationMs": 184.58049886621316
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 48,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.00913395544866737,
+        "offThresholdRms": 0.004566977724333685,
+        "noiseFloorRms": 0.001693795567471887,
+        "measuredFloorRms": 0.001693795567471887,
+        "edgePeakRms": 0.2294345875752056,
+        "clusters": [
+          {
+            "startSample": 1540,
+            "endSample": 5720,
+            "peakRms": 0.12194251497795562,
+            "durationMs": 94.78458049886622
+          },
+          {
+            "startSample": 7260,
+            "endSample": 15435,
+            "peakRms": 0.2294345875752056,
+            "durationMs": 185.37414965986395
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 45423,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.009391356083207819,
+        "offThresholdRms": 0.0046956780416039096,
+        "noiseFloorRms": 2.4754149576438374e-05,
+        "measuredFloorRms": 2.4754149576438374e-05,
+        "edgePeakRms": 0.2359001991888467,
+        "clusters": [
+          {
+            "startSample": 45423,
+            "endSample": 56203,
+            "peakRms": 0.2359001991888467,
+            "durationMs": 244.44444444444446
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 49,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.007294247864160901,
+        "offThresholdRms": 0.0036471239320804505,
+        "noiseFloorRms": 0.0009272934810537336,
+        "measuredFloorRms": 0.0009272934810537336,
+        "edgePeakRms": 0.18322322238053498,
+        "clusters": [
+          {
+            "startSample": 1540,
+            "endSample": 8140,
+            "peakRms": 0.18322322238053498,
+            "durationMs": 149.65986394557822
+          },
+          {
+            "startSample": 9460,
+            "endSample": 13860,
+            "peakRms": 0.15172535603246445,
+            "durationMs": 99.77324263038548
+          },
+          {
+            "startSample": 14520,
+            "endSample": 15435,
+            "peakRms": 0.0326237817259032,
+            "durationMs": 20.74829931972789
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 27783,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.01128278798702133,
+        "offThresholdRms": 0.005641393993510665,
+        "noiseFloorRms": 0.002834108205419817,
+        "measuredFloorRms": 0.002834108205419817,
+        "edgePeakRms": 0.1881846762563178,
+        "clusters": [
+          {
+            "startSample": 27783,
+            "endSample": 41643,
+            "peakRms": 0.1881846762563178,
+            "durationMs": 314.2857142857143
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 50,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.0067354244278986005,
+        "offThresholdRms": 0.0033677122139493003,
+        "noiseFloorRms": 0.0,
+        "measuredFloorRms": 0.0,
+        "edgePeakRms": 0.16918621230896666,
+        "clusters": [
+          {
+            "startSample": 3740,
+            "endSample": 15435,
+            "peakRms": 0.16918621230896666,
+            "durationMs": 265.19274376417235
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 14553,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.009774596703823525,
+        "offThresholdRms": 0.004887298351911763,
+        "noiseFloorRms": 2.473276369808208e-05,
+        "measuredFloorRms": 2.473276369808208e-05,
+        "edgePeakRms": 0.24552676833812576,
+        "clusters": [
+          {
+            "startSample": 14553,
+            "endSample": 23793,
+            "peakRms": 0.24552676833812576,
+            "durationMs": 209.52380952380952
+          },
+          {
+            "startSample": 28853,
+            "endSample": 29988,
+            "peakRms": 0.08385837962851217,
+            "durationMs": 25.736961451247165
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": {
+        "type": "TAIL",
+        "fragment": {
+          "startSample": 28853,
+          "endSample": 29988,
+          "peakRms": 0.08385837962851217,
+          "durationMs": 25.736961451247165
+        },
+        "fragmentSourceStart": 57.63426303854875,
+        "fragmentSourceEnd": 57.66,
+        "fragmentDurationMs": 25.736961451247165,
+        "fragmentRelativePeak": 0.34154475373954785,
+        "isolationSilenceMs": 114.73922902494331,
+        "gapSourceStart": 57.51952380952381,
+        "gapSourceEnd": 57.63426303854875,
+        "mainActiveMs": 209.52380952380952,
+        "mainSpanMs": 209.52380952380952,
+        "distanceFromEdgeMs": 0.0,
+        "silenceBeforeFragmentMs": 114.73922902494331,
+        "silenceAfterFragmentMs": 0.0,
+        "proposedCutSample": 2539141,
+        "reasons": []
+      }
+    },
+    {
+      "phrase": 51,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.0708848086300933,
+        "offThresholdRms": 0.03544240431504665,
+        "noiseFloorRms": 0.017805458899808457,
+        "measuredFloorRms": 0.05164388208773903,
+        "edgePeakRms": 0.14143378736340598,
+        "clusters": [
+          {
+            "startSample": 0,
+            "endSample": 15435,
+            "peakRms": 0.14143378736340598,
+            "durationMs": 350.0
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 20727,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.002991687093523889,
+        "offThresholdRms": 0.0014958435467619445,
+        "noiseFloorRms": 0.0,
+        "measuredFloorRms": 0.0,
+        "edgePeakRms": 0.07514778217544987,
+        "clusters": [
+          {
+            "startSample": 20727,
+            "endSample": 29967,
+            "peakRms": 0.07514778217544987,
+            "durationMs": 209.52380952380952
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 52,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.007847010499518458,
+        "offThresholdRms": 0.003923505249759229,
+        "noiseFloorRms": 4.825252777356536e-06,
+        "measuredFloorRms": 4.825252777356536e-06,
+        "edgePeakRms": 0.19710799201653623,
+        "clusters": [
+          {
+            "startSample": 3740,
+            "endSample": 8360,
+            "peakRms": 0.16453441276245867,
+            "durationMs": 104.76190476190476
+          },
+          {
+            "startSample": 9020,
+            "endSample": 15435,
+            "peakRms": 0.19710799201653623,
+            "durationMs": 145.46485260770976
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 16317,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.0069840057819871475,
+        "offThresholdRms": 0.0034920028909935738,
+        "noiseFloorRms": 4.825252777356536e-06,
+        "measuredFloorRms": 4.825252777356536e-06,
+        "edgePeakRms": 0.17543029361357967,
+        "clusters": [
+          {
+            "startSample": 16317,
+            "endSample": 26217,
+            "peakRms": 0.17543029361357967,
+            "durationMs": 224.48979591836735
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 53,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.008501039731501276,
+        "offThresholdRms": 0.004250519865750638,
+        "noiseFloorRms": 0.00023346445913537006,
+        "measuredFloorRms": 0.00023346445913537006,
+        "edgePeakRms": 0.21353646355281894,
+        "clusters": [
+          {
+            "startSample": 2200,
+            "endSample": 15435,
+            "peakRms": 0.21353646355281894,
+            "durationMs": 300.11337868480723
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 26901,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.005697675489969155,
+        "offThresholdRms": 0.0028488377449845774,
+        "noiseFloorRms": 0.0001109665088482428,
+        "measuredFloorRms": 0.0001109665088482428,
+        "edgePeakRms": 0.14311913754398214,
+        "clusters": [
+          {
+            "startSample": 26901,
+            "endSample": 39661,
+            "peakRms": 0.14311913754398214,
+            "durationMs": 289.3424036281179
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 54,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.008632962150004794,
+        "offThresholdRms": 0.004316481075002397,
+        "noiseFloorRms": 0.0021685020488332817,
+        "measuredFloorRms": 0.0021685020488332817,
+        "edgePeakRms": 0.19152550730072582,
+        "clusters": [
+          {
+            "startSample": 1760,
+            "endSample": 10120,
+            "peakRms": 0.09374927017892351,
+            "durationMs": 189.56916099773244
+          },
+          {
+            "startSample": 11220,
+            "endSample": 15435,
+            "peakRms": 0.19152550730072582,
+            "durationMs": 95.578231292517
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 8820,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.0074536077096102,
+        "offThresholdRms": 0.0037268038548051,
+        "noiseFloorRms": 4.3293032712131066e-05,
+        "measuredFloorRms": 4.3293032712131066e-05,
+        "edgePeakRms": 0.18722616071565054,
+        "clusters": [
+          {
+            "startSample": 8820,
+            "endSample": 10140,
+            "peakRms": 0.0176893137425569,
+            "durationMs": 29.931972789115648
+          },
+          {
+            "startSample": 11020,
+            "endSample": 20920,
+            "peakRms": 0.18722616071565054,
+            "durationMs": 224.48979591836735
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 55,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.008144591353974466,
+        "offThresholdRms": 0.004072295676987233,
+        "noiseFloorRms": 1.4621246996017578e-05,
+        "measuredFloorRms": 1.4621246996017578e-05,
+        "edgePeakRms": 0.20458288512238695,
+        "clusters": [
+          {
+            "startSample": 3520,
+            "endSample": 10780,
+            "peakRms": 0.20458288512238695,
+            "durationMs": 164.62585034013605
+          },
+          {
+            "startSample": 14520,
+            "endSample": 15435,
+            "peakRms": 0.03964496652929806,
+            "durationMs": 20.74829931972789
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 18081,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.007847861104686988,
+        "offThresholdRms": 0.003923930552343494,
+        "noiseFloorRms": 2.4818196642287226e-05,
+        "measuredFloorRms": 2.4818196642287226e-05,
+        "edgePeakRms": 0.19712935825235023,
+        "clusters": [
+          {
+            "startSample": 18081,
+            "endSample": 29301,
+            "peakRms": 0.19712935825235023,
+            "durationMs": 254.42176870748298
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 56,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.07783120576671515,
+        "offThresholdRms": 0.038915602883357575,
+        "noiseFloorRms": 0.0195503149713442,
+        "measuredFloorRms": 0.029428899416354553,
+        "edgePeakRms": 0.1552936717949153,
+        "clusters": [
+          {
+            "startSample": 880,
+            "endSample": 7480,
+            "peakRms": 0.1552936717949153,
+            "durationMs": 149.65986394557822
+          },
+          {
+            "startSample": 11220,
+            "endSample": 15435,
+            "peakRms": 0.1388557520727621,
+            "durationMs": 95.578231292517
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 28665,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.0035586162392020355,
+        "offThresholdRms": 0.0017793081196010177,
+        "noiseFloorRms": 0.0,
+        "measuredFloorRms": 0.0,
+        "edgePeakRms": 0.08938839846201241,
+        "clusters": [
+          {
+            "startSample": 28665,
+            "endSample": 32625,
+            "peakRms": 0.08938839846201241,
+            "durationMs": 89.79591836734694
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 57,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.02583499624956509,
+        "offThresholdRms": 0.012917498124782545,
+        "noiseFloorRms": 0.006489457653738344,
+        "measuredFloorRms": 0.006489457653738344,
+        "edgePeakRms": 0.2592615739631404,
+        "clusters": [
+          {
+            "startSample": 1980,
+            "endSample": 12100,
+            "peakRms": 0.2592615739631404,
+            "durationMs": 229.47845804988663
+          },
+          {
+            "startSample": 15180,
+            "endSample": 15435,
+            "peakRms": 0.0754763053578416,
+            "durationMs": 5.782312925170068
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 13230,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.006825833173243846,
+        "offThresholdRms": 0.003412916586621923,
+        "noiseFloorRms": 1.2931153660357574e-05,
+        "measuredFloorRms": 1.2931153660357574e-05,
+        "edgePeakRms": 0.17145717731619195,
+        "clusters": [
+          {
+            "startSample": 13230,
+            "endSample": 26210,
+            "peakRms": 0.17145717731619195,
+            "durationMs": 294.33106575963717
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 58,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.008178022857743404,
+        "offThresholdRms": 0.004089011428871702,
+        "noiseFloorRms": 1.0079624314511358e-05,
+        "measuredFloorRms": 1.0079624314511358e-05,
+        "edgePeakRms": 0.20542264652940853,
+        "clusters": [
+          {
+            "startSample": 3740,
+            "endSample": 11880,
+            "peakRms": 0.20542264652940853,
+            "durationMs": 184.58049886621316
+          },
+          {
+            "startSample": 12540,
+            "endSample": 15435,
+            "peakRms": 0.1940218513682364,
+            "durationMs": 65.64625850340136
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 27783,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.008182179139774396,
+        "offThresholdRms": 0.004091089569887198,
+        "noiseFloorRms": 0.0004968082866981283,
+        "measuredFloorRms": 0.0004968082866981283,
+        "edgePeakRms": 0.2055270476138003,
+        "clusters": [
+          {
+            "startSample": 27783,
+            "endSample": 30863,
+            "peakRms": 0.12047430647396332,
+            "durationMs": 69.84126984126983
+          },
+          {
+            "startSample": 33283,
+            "endSample": 40323,
+            "peakRms": 0.2055270476138003,
+            "durationMs": 159.63718820861678
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 59,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.008370167728604301,
+        "offThresholdRms": 0.004185083864302151,
+        "noiseFloorRms": 2.8435142449853106e-05,
+        "measuredFloorRms": 2.8435142449853106e-05,
+        "edgePeakRms": 0.21024910746940503,
+        "clusters": [
+          {
+            "startSample": 4840,
+            "endSample": 15435,
+            "peakRms": 0.21024910746940503,
+            "durationMs": 240.24943310657596
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 35721,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.006620758646623497,
+        "offThresholdRms": 0.0033103793233117485,
+        "noiseFloorRms": 0.0,
+        "measuredFloorRms": 0.0,
+        "edgePeakRms": 0.16630593810753289,
+        "clusters": [
+          {
+            "startSample": 35721,
+            "endSample": 39681,
+            "peakRms": 0.16630593810753289,
+            "durationMs": 89.79591836734694
+          },
+          {
+            "startSample": 50461,
+            "endSample": 51156,
+            "peakRms": 0.1607142085995986,
+            "durationMs": 15.759637188208616
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": {
+        "type": "TAIL",
+        "fragment": {
+          "startSample": 50461,
+          "endSample": 51156,
+          "peakRms": 0.1607142085995986,
+          "durationMs": 15.759637188208616
+        },
+        "fragmentSourceStart": 65.2442403628118,
+        "fragmentSourceEnd": 65.26,
+        "fragmentDurationMs": 15.759637188208616,
+        "fragmentRelativePeak": 0.9663768499696103,
+        "isolationSilenceMs": 244.44444444444446,
+        "gapSourceStart": 64.99979591836734,
+        "gapSourceEnd": 65.2442403628118,
+        "mainActiveMs": 89.79591836734694,
+        "mainSpanMs": 89.79591836734694,
+        "distanceFromEdgeMs": 0.0,
+        "silenceBeforeFragmentMs": 244.44444444444446,
+        "silenceAfterFragmentMs": 0.0,
+        "proposedCutSample": 2871881,
+        "reasons": [
+          "INSUFFICIENT_MAIN_SPEECH_EVIDENCE"
+        ]
+      }
+    },
+    {
+      "phrase": 60,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.06531094524051614,
+        "offThresholdRms": 0.03265547262025807,
+        "noiseFloorRms": 0.01640536771787177,
+        "measuredFloorRms": 0.01640536771787177,
+        "edgePeakRms": 0.17052594085041953,
+        "clusters": [
+          {
+            "startSample": 0,
+            "endSample": 3740,
+            "peakRms": 0.17052594085041953,
+            "durationMs": 84.80725623582767
+          },
+          {
+            "startSample": 6600,
+            "endSample": 9460,
+            "peakRms": 0.1059337455039479,
+            "durationMs": 64.85260770975057
+          },
+          {
+            "startSample": 10340,
+            "endSample": 14960,
+            "peakRms": 0.13465008905693804,
+            "durationMs": 104.76190476190476
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 33075,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.007406177800241642,
+        "offThresholdRms": 0.003703088900120821,
+        "noiseFloorRms": 4.5065709861559416e-05,
+        "measuredFloorRms": 4.5065709861559416e-05,
+        "edgePeakRms": 0.18603477525774445,
+        "clusters": [
+          {
+            "startSample": 33075,
+            "endSample": 46275,
+            "peakRms": 0.18603477525774445,
+            "durationMs": 299.31972789115645
+          }
+        ]
+      },
+      "headCandidate": {
+        "type": "HEAD",
+        "fragment": {
+          "startSample": 0,
+          "endSample": 3740,
+          "peakRms": 0.17052594085041953,
+          "durationMs": 84.80725623582767
+        },
+        "fragmentSourceStart": 65.26,
+        "fragmentSourceEnd": 65.34480725623582,
+        "fragmentDurationMs": 84.80725623582767,
+        "fragmentRelativePeak": 1.26643763880699,
+        "isolationSilenceMs": 64.85260770975057,
+        "gapSourceStart": 65.34480725623582,
+        "gapSourceEnd": 65.40965986394558,
+        "mainActiveMs": 169.61451247165533,
+        "mainSpanMs": 189.56916099773244,
+        "distanceFromEdgeMs": 0.0,
+        "silenceBeforeFragmentMs": 0.0,
+        "silenceAfterFragmentMs": 64.85260770975057,
+        "proposedCutSample": 2883136,
+        "reasons": []
+      },
+      "tailCandidate": null
+    },
+    {
+      "phrase": 61,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.0059571561445025895,
+        "offThresholdRms": 0.0029785780722512947,
+        "noiseFloorRms": 2.567750085159103e-05,
+        "measuredFloorRms": 2.567750085159103e-05,
+        "edgePeakRms": 0.14963699689759974,
+        "clusters": [
+          {
+            "startSample": 3300,
+            "endSample": 15435,
+            "peakRms": 0.14963699689759974,
+            "durationMs": 275.1700680272109
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 10584,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.0059017609931884,
+        "offThresholdRms": 0.0029508804965942,
+        "noiseFloorRms": 0.0,
+        "measuredFloorRms": 0.0,
+        "edgePeakRms": 0.14824553360802442,
+        "clusters": [
+          {
+            "startSample": 10584,
+            "endSample": 22464,
+            "peakRms": 0.14824553360802442,
+            "durationMs": 269.38775510204084
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 62,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.005733572285361086,
+        "offThresholdRms": 0.002866786142680543,
+        "noiseFloorRms": 0.0,
+        "measuredFloorRms": 0.0,
+        "edgePeakRms": 0.1440208242767788,
+        "clusters": [
+          {
+            "startSample": 3740,
+            "endSample": 15435,
+            "peakRms": 0.1440208242767788,
+            "durationMs": 265.19274376417235
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 26460,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.007165399174347158,
+        "offThresholdRms": 0.003582699587173579,
+        "noiseFloorRms": 8.990215958536162e-05,
+        "measuredFloorRms": 8.990215958536162e-05,
+        "edgePeakRms": 0.1799866896239257,
+        "clusters": [
+          {
+            "startSample": 26460,
+            "endSample": 40100,
+            "peakRms": 0.1799866896239257,
+            "durationMs": 309.297052154195
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 63,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.0071359830727076865,
+        "offThresholdRms": 0.0035679915363538432,
+        "noiseFloorRms": 0.0,
+        "measuredFloorRms": 0.0,
+        "edgePeakRms": 0.17924779055816475,
+        "clusters": [
+          {
+            "startSample": 9020,
+            "endSample": 15435,
+            "peakRms": 0.17924779055816475,
+            "durationMs": 145.46485260770976
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 68796,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.00568753426331237,
+        "offThresholdRms": 0.002843767131656185,
+        "noiseFloorRms": 4.6811827932578765e-06,
+        "measuredFloorRms": 4.6811827932578765e-06,
+        "edgePeakRms": 0.14286440144760176,
+        "clusters": [
+          {
+            "startSample": 68796,
+            "endSample": 79796,
+            "peakRms": 0.14286440144760176,
+            "durationMs": 249.4331065759637
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 64,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.009054757882081642,
+        "offThresholdRms": 0.004527378941040821,
+        "noiseFloorRms": 0.00023294256765271957,
+        "measuredFloorRms": 0.00023294256765271957,
+        "edgePeakRms": 0.22744523464605293,
+        "clusters": [
+          {
+            "startSample": 2640,
+            "endSample": 15435,
+            "peakRms": 0.22744523464605293,
+            "durationMs": 290.13605442176873
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 52038,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.022516510881089212,
+        "offThresholdRms": 0.011258255440544606,
+        "noiseFloorRms": 0.005655891816714582,
+        "measuredFloorRms": 0.005655891816714582,
+        "edgePeakRms": 0.16597203395116145,
+        "clusters": [
+          {
+            "startSample": 52038,
+            "endSample": 65898,
+            "peakRms": 0.16597203395116145,
+            "durationMs": 314.2857142857143
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 65,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.004937474353637519,
+        "offThresholdRms": 0.0024687371768187596,
+        "noiseFloorRms": 4.600698006862848e-06,
+        "measuredFloorRms": 4.600698006862848e-06,
+        "edgePeakRms": 0.12402374834828617,
+        "clusters": [
+          {
+            "startSample": 3520,
+            "endSample": 15435,
+            "peakRms": 0.12402374834828617,
+            "durationMs": 270.1814058956916
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 29106,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.0032626586317572107,
+        "offThresholdRms": 0.0016313293158786053,
+        "noiseFloorRms": 0.0,
+        "measuredFloorRms": 0.0,
+        "edgePeakRms": 0.08195427947758548,
+        "clusters": [
+          {
+            "startSample": 29106,
+            "endSample": 38346,
+            "peakRms": 0.08195427947758548,
+            "durationMs": 209.52380952380952
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 66,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.0064967901470455195,
+        "offThresholdRms": 0.0032483950735227598,
+        "noiseFloorRms": 1.8969163833864167e-05,
+        "measuredFloorRms": 1.8969163833864167e-05,
+        "edgePeakRms": 0.16319199018728767,
+        "clusters": [
+          {
+            "startSample": 2420,
+            "endSample": 15435,
+            "peakRms": 0.16319199018728767,
+            "durationMs": 295.12471655328795
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 14553,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.007230532576896558,
+        "offThresholdRms": 0.003615266288448279,
+        "noiseFloorRms": 0.0,
+        "measuredFloorRms": 0.0,
+        "edgePeakRms": 0.1816227667249446,
+        "clusters": [
+          {
+            "startSample": 14553,
+            "endSample": 24453,
+            "peakRms": 0.1816227667249446,
+            "durationMs": 224.48979591836735
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 67,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.014011499767501812,
+        "offThresholdRms": 0.007005749883750906,
+        "noiseFloorRms": 0.0035195296151087443,
+        "measuredFloorRms": 0.0035195296151087443,
+        "edgePeakRms": 0.18205284549517028,
+        "clusters": [
+          {
+            "startSample": 2420,
+            "endSample": 9020,
+            "peakRms": 0.0932234803782775,
+            "durationMs": 149.65986394557822
+          },
+          {
+            "startSample": 9900,
+            "endSample": 15435,
+            "peakRms": 0.18205284549517028,
+            "durationMs": 125.51020408163265
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 13230,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.005811568764659556,
+        "offThresholdRms": 0.002905784382329778,
+        "noiseFloorRms": 0.0,
+        "measuredFloorRms": 0.0,
+        "edgePeakRms": 0.14598000725733226,
+        "clusters": [
+          {
+            "startSample": 13230,
+            "endSample": 18950,
+            "peakRms": 0.14598000725733226,
+            "durationMs": 129.70521541950114
+          },
+          {
+            "startSample": 26870,
+            "endSample": 28665,
+            "peakRms": 0.12946315378184123,
+            "durationMs": 40.702947845804985
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": {
+        "type": "TAIL",
+        "fragment": {
+          "startSample": 26870,
+          "endSample": 28665,
+          "peakRms": 0.12946315378184123,
+          "durationMs": 40.702947845804985
+        },
+        "fragmentSourceStart": 73.63929705215419,
+        "fragmentSourceEnd": 73.68,
+        "fragmentDurationMs": 40.702947845804985,
+        "fragmentRelativePeak": 0.886855372966414,
+        "isolationSilenceMs": 179.59183673469389,
+        "gapSourceStart": 73.4597052154195,
+        "gapSourceEnd": 73.63929705215419,
+        "mainActiveMs": 129.70521541950114,
+        "mainSpanMs": 129.70521541950114,
+        "distanceFromEdgeMs": 0.0,
+        "silenceBeforeFragmentMs": 179.59183673469389,
+        "silenceAfterFragmentMs": 0.0,
+        "proposedCutSample": 3243533,
+        "reasons": []
+      }
+    },
+    {
+      "phrase": 68,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.15953024059421209,
+        "offThresholdRms": 0.07976512029710604,
+        "noiseFloorRms": 0.04007218467640602,
+        "measuredFloorRms": 0.04524103352643264,
+        "edgePeakRms": 0.31830467715554994,
+        "clusters": [
+          {
+            "startSample": 6820,
+            "endSample": 12540,
+            "peakRms": 0.31830467715554994,
+            "durationMs": 129.70521541950114
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 43659,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.004996032115482352,
+        "offThresholdRms": 0.002498016057741176,
+        "noiseFloorRms": 5.039812157255679e-06,
+        "measuredFloorRms": 5.039812157255679e-06,
+        "edgePeakRms": 0.1254946528226622,
+        "clusters": [
+          {
+            "startSample": 43659,
+            "endSample": 55539,
+            "peakRms": 0.1254946528226622,
+            "durationMs": 269.38775510204084
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 69,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.006571712004991801,
+        "offThresholdRms": 0.0032858560024959004,
+        "noiseFloorRms": 0.0,
+        "measuredFloorRms": 0.0,
+        "edgePeakRms": 0.1650739421712752,
+        "clusters": [
+          {
+            "startSample": 9680,
+            "endSample": 15435,
+            "peakRms": 0.1650739421712752,
+            "durationMs": 130.49886621315193
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 26460,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.007943212524442309,
+        "offThresholdRms": 0.003971606262221154,
+        "noiseFloorRms": 1.1908611523068378e-05,
+        "measuredFloorRms": 1.1908611523068378e-05,
+        "edgePeakRms": 0.19952447762743591,
+        "clusters": [
+          {
+            "startSample": 26460,
+            "endSample": 37680,
+            "peakRms": 0.19952447762743591,
+            "durationMs": 254.42176870748298
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 70,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.04379967919957916,
+        "offThresholdRms": 0.02189983959978958,
+        "noiseFloorRms": 0.011001981988589529,
+        "measuredFloorRms": 0.011001981988589529,
+        "edgePeakRms": 0.2273293239082992,
+        "clusters": [
+          {
+            "startSample": 2640,
+            "endSample": 15435,
+            "peakRms": 0.2273293239082992,
+            "durationMs": 290.13605442176873
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 34398,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.007703004806093507,
+        "offThresholdRms": 0.0038515024030467537,
+        "noiseFloorRms": 0.0008413335830373865,
+        "measuredFloorRms": 0.0008413335830373865,
+        "edgePeakRms": 0.19349073254279361,
+        "clusters": [
+          {
+            "startSample": 34398,
+            "endSample": 48038,
+            "peakRms": 0.19349073254279361,
+            "durationMs": 309.297052154195
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 71,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.005722826411982402,
+        "offThresholdRms": 0.002861413205991201,
+        "noiseFloorRms": 2.5739250441806008e-05,
+        "measuredFloorRms": 2.5739250441806008e-05,
+        "edgePeakRms": 0.14375090014143246,
+        "clusters": [
+          {
+            "startSample": 4180,
+            "endSample": 15435,
+            "peakRms": 0.14375090014143246,
+            "durationMs": 255.2154195011338
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 41454,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.042438001100676546,
+        "offThresholdRms": 0.021219000550338273,
+        "noiseFloorRms": 0.010659943914517805,
+        "measuredFloorRms": 0.010659943914517805,
+        "edgePeakRms": 0.11808548147524431,
+        "clusters": [
+          {
+            "startSample": 41674,
+            "endSample": 55094,
+            "peakRms": 0.11808548147524431,
+            "durationMs": 304.3083900226757
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 72,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.007438100415487581,
+        "offThresholdRms": 0.0037190502077437907,
+        "noiseFloorRms": 3.2531847588441535e-06,
+        "measuredFloorRms": 3.2531847588441535e-06,
+        "edgePeakRms": 0.18683663509869022,
+        "clusters": [
+          {
+            "startSample": 5500,
+            "endSample": 15435,
+            "peakRms": 0.18683663509869022,
+            "durationMs": 225.28344671201813
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 40572,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.006567461699943347,
+        "offThresholdRms": 0.0032837308499716737,
+        "noiseFloorRms": 0.00012832978903622186,
+        "measuredFloorRms": 0.00012832978903622186,
+        "edgePeakRms": 0.1649671793354653,
+        "clusters": [
+          {
+            "startSample": 40572,
+            "endSample": 54212,
+            "peakRms": 0.1649671793354653,
+            "durationMs": 309.297052154195
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 73,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.006033252070091977,
+        "offThresholdRms": 0.0030166260350459884,
+        "noiseFloorRms": 0.000980510641865878,
+        "measuredFloorRms": 0.000980510641865878,
+        "edgePeakRms": 0.1515484401274112,
+        "clusters": [
+          {
+            "startSample": 3080,
+            "endSample": 15435,
+            "peakRms": 0.1515484401274112,
+            "durationMs": 280.1587301587302
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 18963,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.007516119200826349,
+        "offThresholdRms": 0.0037580596004131747,
+        "noiseFloorRms": 4.484205731546468e-06,
+        "measuredFloorRms": 4.484205731546468e-06,
+        "edgePeakRms": 0.18879637838164331,
+        "clusters": [
+          {
+            "startSample": 18963,
+            "endSample": 30403,
+            "peakRms": 0.18879637838164331,
+            "durationMs": 259.4104308390023
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 74,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.007350590777783372,
+        "offThresholdRms": 0.003675295388891686,
+        "noiseFloorRms": 0.0,
+        "measuredFloorRms": 0.0,
+        "edgePeakRms": 0.184638492382935,
+        "clusters": [
+          {
+            "startSample": 5720,
+            "endSample": 15435,
+            "peakRms": 0.184638492382935,
+            "durationMs": 220.29478458049886
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 23814,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.0063222601104889415,
+        "offThresholdRms": 0.0031611300552444707,
+        "noiseFloorRms": 5.987981222640559e-05,
+        "measuredFloorRms": 5.987981222640559e-05,
+        "edgePeakRms": 0.15880799388011427,
+        "clusters": [
+          {
+            "startSample": 23814,
+            "endSample": 35694,
+            "peakRms": 0.15880799388011427,
+            "durationMs": 269.38775510204084
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 75,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.007846316748556433,
+        "offThresholdRms": 0.003923158374278216,
+        "noiseFloorRms": 0.0,
+        "measuredFloorRms": 0.0,
+        "edgePeakRms": 0.19709056578025266,
+        "clusters": [
+          {
+            "startSample": 5720,
+            "endSample": 15435,
+            "peakRms": 0.19709056578025266,
+            "durationMs": 220.29478458049886
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 55125,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.007976775945218114,
+        "offThresholdRms": 0.003988387972609057,
+        "noiseFloorRms": 0.0,
+        "measuredFloorRms": 0.0,
+        "edgePeakRms": 0.2003675526398538,
+        "clusters": [
+          {
+            "startSample": 55125,
+            "endSample": 63265,
+            "peakRms": 0.2003675526398538,
+            "durationMs": 184.58049886621316
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 76,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.008383322040032982,
+        "offThresholdRms": 0.004191661020016491,
+        "noiseFloorRms": 0.0,
+        "measuredFloorRms": 0.0,
+        "edgePeakRms": 0.21057952883334058,
+        "clusters": [
+          {
+            "startSample": 3960,
+            "endSample": 15435,
+            "peakRms": 0.21057952883334058,
+            "durationMs": 260.2040816326531
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 32634,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.010587629820681125,
+        "offThresholdRms": 0.0052938149103405625,
+        "noiseFloorRms": 0.0026594923688415127,
+        "measuredFloorRms": 0.0026594923688415127,
+        "edgePeakRms": 0.1596072411065908,
+        "clusters": [
+          {
+            "startSample": 32634,
+            "endSample": 33514,
+            "peakRms": 0.018608938422125517,
+            "durationMs": 19.954648526077097
+          },
+          {
+            "startSample": 35714,
+            "endSample": 48069,
+            "peakRms": 0.1596072411065908,
+            "durationMs": 280.1587301587302
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 77,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.0063415694986756,
+        "offThresholdRms": 0.0031707847493378,
+        "noiseFloorRms": 0.0,
+        "measuredFloorRms": 0.0,
+        "edgePeakRms": 0.15929302378198246,
+        "clusters": [
+          {
+            "startSample": 0,
+            "endSample": 880,
+            "peakRms": 0.015357308019627265,
+            "durationMs": 19.954648526077097
+          },
+          {
+            "startSample": 12320,
+            "endSample": 15435,
+            "peakRms": 0.15929302378198246,
+            "durationMs": 70.63492063492063
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 31752,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.00992644861688779,
+        "offThresholdRms": 0.004963224308443895,
+        "noiseFloorRms": 8.881849770985833e-05,
+        "measuredFloorRms": 8.881849770985833e-05,
+        "edgePeakRms": 0.24934111593837474,
+        "clusters": [
+          {
+            "startSample": 31752,
+            "endSample": 44952,
+            "peakRms": 0.24934111593837474,
+            "durationMs": 299.31972789115645
+          }
+        ]
+      },
+      "headCandidate": {
+        "type": "HEAD",
+        "fragment": {
+          "startSample": 0,
+          "endSample": 880,
+          "peakRms": 0.015357308019627265,
+          "durationMs": 19.954648526077097
+        },
+        "fragmentSourceStart": 84.02,
+        "fragmentSourceEnd": 84.03995464852608,
+        "fragmentDurationMs": 19.954648526077097,
+        "fragmentRelativePeak": 0.09640916880733054,
+        "isolationSilenceMs": 259.4104308390023,
+        "gapSourceStart": 84.03995464852608,
+        "gapSourceEnd": 84.29936507936507,
+        "mainActiveMs": 70.63492063492063,
+        "mainSpanMs": 70.63492063492063,
+        "distanceFromEdgeMs": 0.0,
+        "silenceBeforeFragmentMs": 0.0,
+        "silenceAfterFragmentMs": 259.4104308390023,
+        "proposedCutSample": 3711882,
+        "reasons": [
+          "INSUFFICIENT_MAIN_SPEECH_EVIDENCE"
+        ]
+      },
+      "tailCandidate": null
+    },
+    {
+      "phrase": 78,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.008383768682688445,
+        "offThresholdRms": 0.004191884341344223,
+        "noiseFloorRms": 1.5837364126699514e-05,
+        "measuredFloorRms": 1.5837364126699514e-05,
+        "edgePeakRms": 0.21059074798960048,
+        "clusters": [
+          {
+            "startSample": 3520,
+            "endSample": 15435,
+            "peakRms": 0.21059074798960048,
+            "durationMs": 270.1814058956916
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 48510,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.00570688716476068,
+        "offThresholdRms": 0.00285344358238034,
+        "noiseFloorRms": 4.484205731546468e-06,
+        "measuredFloorRms": 4.484205731546468e-06,
+        "edgePeakRms": 0.14335052435318527,
+        "clusters": [
+          {
+            "startSample": 48510,
+            "endSample": 59290,
+            "peakRms": 0.14335052435318527,
+            "durationMs": 244.44444444444446
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 79,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.007703340241336311,
+        "offThresholdRms": 0.0038516701206681553,
+        "noiseFloorRms": 0.0013619698006895671,
+        "measuredFloorRms": 0.0013619698006895671,
+        "edgePeakRms": 0.19349915829514408,
+        "clusters": [
+          {
+            "startSample": 2640,
+            "endSample": 15435,
+            "peakRms": 0.19349915829514408,
+            "durationMs": 290.13605442176873
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 24255,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.014291501707291104,
+        "offThresholdRms": 0.007145750853645552,
+        "noiseFloorRms": 0.0035898629224440527,
+        "measuredFloorRms": 0.0035898629224440527,
+        "edgePeakRms": 0.20453843651153036,
+        "clusters": [
+          {
+            "startSample": 24255,
+            "endSample": 27995,
+            "peakRms": 0.20453843651153036,
+            "durationMs": 84.80725623582767
+          },
+          {
+            "startSample": 29755,
+            "endSample": 38775,
+            "peakRms": 0.171186609207284,
+            "durationMs": 204.53514739229024
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 80,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.007157562231107716,
+        "offThresholdRms": 0.003578781115553858,
+        "noiseFloorRms": 0.0,
+        "measuredFloorRms": 0.0,
+        "edgePeakRms": 0.17978983451004907,
+        "clusters": [
+          {
+            "startSample": 4180,
+            "endSample": 15435,
+            "peakRms": 0.17978983451004907,
+            "durationMs": 255.2154195011338
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 48510,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.0046174228256784305,
+        "offThresholdRms": 0.0023087114128392153,
+        "noiseFloorRms": 0.0,
+        "measuredFloorRms": 0.0,
+        "edgePeakRms": 0.11598441744364273,
+        "clusters": [
+          {
+            "startSample": 48510,
+            "endSample": 53570,
+            "peakRms": 0.11598441744364273,
+            "durationMs": 114.73922902494331
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 81,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.023985703745515067,
+        "offThresholdRms": 0.011992851872757533,
+        "noiseFloorRms": 0.006024936378856782,
+        "measuredFloorRms": 0.006024936378856782,
+        "edgePeakRms": 0.22043494990324228,
+        "clusters": [
+          {
+            "startSample": 1540,
+            "endSample": 5500,
+            "peakRms": 0.11058955822378057,
+            "durationMs": 89.79591836734694
+          },
+          {
+            "startSample": 9020,
+            "endSample": 15435,
+            "peakRms": 0.22043494990324228,
+            "durationMs": 145.46485260770976
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 48510,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.009214873258443723,
+        "offThresholdRms": 0.004607436629221862,
+        "noiseFloorRms": 1.7818426761509466e-06,
+        "measuredFloorRms": 1.7818426761509466e-06,
+        "edgePeakRms": 0.23146715105965254,
+        "clusters": [
+          {
+            "startSample": 48510,
+            "endSample": 60170,
+            "peakRms": 0.23146715105965254,
+            "durationMs": 264.39909297052156
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 82,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.010312177334502489,
+        "offThresholdRms": 0.005156088667251244,
+        "noiseFloorRms": 7.519010145197944e-05,
+        "measuredFloorRms": 7.519010145197944e-05,
+        "edgePeakRms": 0.25903018325857424,
+        "clusters": [
+          {
+            "startSample": 2640,
+            "endSample": 15435,
+            "peakRms": 0.25903018325857424,
+            "durationMs": 290.13605442176873
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 45423,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.007687242686131966,
+        "offThresholdRms": 0.003843621343065983,
+        "noiseFloorRms": 2.567750085159103e-05,
+        "measuredFloorRms": 2.567750085159103e-05,
+        "edgePeakRms": 0.19309480599016138,
+        "clusters": [
+          {
+            "startSample": 45423,
+            "endSample": 51583,
+            "peakRms": 0.19309480599016138,
+            "durationMs": 139.68253968253967
+          },
+          {
+            "startSample": 58843,
+            "endSample": 60858,
+            "peakRms": 0.08681218847087274,
+            "durationMs": 45.69160997732426
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": {
+        "type": "TAIL",
+        "fragment": {
+          "startSample": 58843,
+          "endSample": 60858,
+          "peakRms": 0.08681218847087274,
+          "durationMs": 45.69160997732426
+        },
+        "fragmentSourceStart": 91.67430839002267,
+        "fragmentSourceEnd": 91.72,
+        "fragmentDurationMs": 45.69160997732426,
+        "fragmentRelativePeak": 0.44958323982725884,
+        "isolationSilenceMs": 164.62585034013605,
+        "gapSourceStart": 91.50968253968254,
+        "gapSourceEnd": 91.67430839002267,
+        "mainActiveMs": 139.68253968253967,
+        "mainSpanMs": 139.68253968253967,
+        "distanceFromEdgeMs": 0.0,
+        "silenceBeforeFragmentMs": 164.62585034013605,
+        "silenceAfterFragmentMs": 0.0,
+        "proposedCutSample": 4039207,
+        "reasons": []
+      }
+    },
+    {
+      "phrase": 83,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.02552211524004825,
+        "offThresholdRms": 0.012761057620024125,
+        "noiseFloorRms": 0.006410865497490107,
+        "measuredFloorRms": 0.006410865497490107,
+        "edgePeakRms": 0.2224391445462578,
+        "clusters": [
+          {
+            "startSample": 0,
+            "endSample": 12320,
+            "peakRms": 0.2224391445462578,
+            "durationMs": 279.36507936507934
+          },
+          {
+            "startSample": 14960,
+            "endSample": 15435,
+            "peakRms": 0.09431984533277073,
+            "durationMs": 10.770975056689343
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 26019,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.010776280317616519,
+        "offThresholdRms": 0.0053881401588082595,
+        "noiseFloorRms": 0.0027068792311964684,
+        "measuredFloorRms": 0.0027068792311964684,
+        "edgePeakRms": 0.17901547617790498,
+        "clusters": [
+          {
+            "startSample": 26019,
+            "endSample": 27559,
+            "peakRms": 0.04174444009632875,
+            "durationMs": 34.92063492063492
+          },
+          {
+            "startSample": 28219,
+            "endSample": 40539,
+            "peakRms": 0.17901547617790498,
+            "durationMs": 279.36507936507934
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 84,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.007181823568087288,
+        "offThresholdRms": 0.003590911784043644,
+        "noiseFloorRms": 4.343945826899619e-05,
+        "measuredFloorRms": 4.343945826899619e-05,
+        "edgePeakRms": 0.18039925174174173,
+        "clusters": [
+          {
+            "startSample": 3300,
+            "endSample": 11220,
+            "peakRms": 0.1574165518145395,
+            "durationMs": 179.59183673469389
+          },
+          {
+            "startSample": 12320,
+            "endSample": 15435,
+            "peakRms": 0.18039925174174173,
+            "durationMs": 70.63492063492063
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 18081,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.006111824250730297,
+        "offThresholdRms": 0.0030559121253651484,
+        "noiseFloorRms": 0.0,
+        "measuredFloorRms": 0.0,
+        "edgePeakRms": 0.15352208407180634,
+        "clusters": [
+          {
+            "startSample": 18081,
+            "endSample": 29301,
+            "peakRms": 0.15352208407180634,
+            "durationMs": 254.42176870748298
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 85,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.005135602249313333,
+        "offThresholdRms": 0.0025678011246566667,
+        "noiseFloorRms": 0.0,
+        "measuredFloorRms": 0.0,
+        "edgePeakRms": 0.1290004960768024,
+        "clusters": [
+          {
+            "startSample": 6160,
+            "endSample": 15435,
+            "peakRms": 0.1290004960768024,
+            "durationMs": 210.31746031746033
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 44100,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.00741114151863697,
+        "offThresholdRms": 0.003705570759318485,
+        "noiseFloorRms": 0.0,
+        "measuredFloorRms": 0.0,
+        "edgePeakRms": 0.18615945822661503,
+        "clusters": [
+          {
+            "startSample": 44100,
+            "endSample": 52240,
+            "peakRms": 0.18615945822661503,
+            "durationMs": 184.58049886621316
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 86,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.0067452384323113766,
+        "offThresholdRms": 0.0033726192161556883,
+        "noiseFloorRms": 2.9904537044608512e-05,
+        "measuredFloorRms": 2.9904537044608512e-05,
+        "edgePeakRms": 0.16943272895419895,
+        "clusters": [
+          {
+            "startSample": 3740,
+            "endSample": 15435,
+            "peakRms": 0.16943272895419895,
+            "durationMs": 265.19274376417235
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 41454,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.0059721700627466704,
+        "offThresholdRms": 0.0029860850313733352,
+        "noiseFloorRms": 0.0,
+        "measuredFloorRms": 0.0,
+        "edgePeakRms": 0.15001412947281076,
+        "clusters": [
+          {
+            "startSample": 41454,
+            "endSample": 52674,
+            "peakRms": 0.15001412947281076,
+            "durationMs": 254.42176870748298
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 87,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.0068907101350223834,
+        "offThresholdRms": 0.0034453550675111917,
+        "noiseFloorRms": 0.000275352832677762,
+        "measuredFloorRms": 0.000275352832677762,
+        "edgePeakRms": 0.17308681291628267,
+        "clusters": [
+          {
+            "startSample": 1980,
+            "endSample": 7480,
+            "peakRms": 0.17308681291628267,
+            "durationMs": 124.71655328798185
+          },
+          {
+            "startSample": 8800,
+            "endSample": 15435,
+            "peakRms": 0.1562572871056313,
+            "durationMs": 150.45351473922904
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 13671,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.02698164775609198,
+        "offThresholdRms": 0.01349082387804599,
+        "noiseFloorRms": 0.006777483489829836,
+        "measuredFloorRms": 0.006777483489829836,
+        "edgePeakRms": 0.2061616132376817,
+        "clusters": [
+          {
+            "startSample": 13671,
+            "endSample": 17411,
+            "peakRms": 0.16403509981769904,
+            "durationMs": 84.80725623582767
+          },
+          {
+            "startSample": 18511,
+            "endSample": 27751,
+            "peakRms": 0.2061616132376817,
+            "durationMs": 209.52380952380952
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 88,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.007716823865383341,
+        "offThresholdRms": 0.0038584119326916704,
+        "noiseFloorRms": 7.274342264141787e-06,
+        "measuredFloorRms": 7.274342264141787e-06,
+        "edgePeakRms": 0.1938378516180572,
+        "clusters": [
+          {
+            "startSample": 4400,
+            "endSample": 15435,
+            "peakRms": 0.1938378516180572,
+            "durationMs": 250.22675736961452
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 53361,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.002585332469222528,
+        "offThresholdRms": 0.001292666234611264,
+        "noiseFloorRms": 0.0,
+        "measuredFloorRms": 0.0,
+        "edgePeakRms": 0.06494061550381226,
+        "clusters": [
+          {
+            "startSample": 53361,
+            "endSample": 56221,
+            "peakRms": 0.06494061550381226,
+            "durationMs": 64.85260770975057
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 89,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.07366659178919198,
+        "offThresholdRms": 0.03683329589459599,
+        "noiseFloorRms": 0.018504211237082638,
+        "measuredFloorRms": 0.034855903293351746,
+        "edgePeakRms": 0.14698417446917064,
+        "clusters": [
+          {
+            "startSample": 1760,
+            "endSample": 10120,
+            "peakRms": 0.14698417446917064,
+            "durationMs": 189.56916099773244
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 41895,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.004764337995672723,
+        "offThresholdRms": 0.0023821689978363613,
+        "noiseFloorRms": 0.0,
+        "measuredFloorRms": 0.0,
+        "edgePeakRms": 0.11967475966455858,
+        "clusters": [
+          {
+            "startSample": 41895,
+            "endSample": 47175,
+            "peakRms": 0.11967475966455858,
+            "durationMs": 119.72789115646259
+          },
+          {
+            "startSample": 57075,
+            "endSample": 57330,
+            "peakRms": 0.008190297757381225,
+            "durationMs": 5.782312925170068
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 90,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.010566211522707914,
+        "offThresholdRms": 0.005283105761353957,
+        "noiseFloorRms": 0.002654112335635019,
+        "measuredFloorRms": 0.002654112335635019,
+        "edgePeakRms": 0.23466185378623297,
+        "clusters": [
+          {
+            "startSample": 0,
+            "endSample": 6600,
+            "peakRms": 0.23466185378623297,
+            "durationMs": 149.65986394557822
+          },
+          {
+            "startSample": 9240,
+            "endSample": 15435,
+            "peakRms": 0.1845976380772653,
+            "durationMs": 140.47619047619048
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 26019,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.009744350590249947,
+        "offThresholdRms": 0.004872175295124973,
+        "noiseFloorRms": 0.0002886145140676304,
+        "measuredFloorRms": 0.0002886145140676304,
+        "edgePeakRms": 0.24476702031521202,
+        "clusters": [
+          {
+            "startSample": 28659,
+            "endSample": 38559,
+            "peakRms": 0.24476702031521202,
+            "durationMs": 224.48979591836735
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 91,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.006818278870612956,
+        "offThresholdRms": 0.003409139435306478,
+        "noiseFloorRms": 0.0,
+        "measuredFloorRms": 0.0,
+        "edgePeakRms": 0.17126742181341145,
+        "clusters": [
+          {
+            "startSample": 7040,
+            "endSample": 12980,
+            "peakRms": 0.17126742181341145,
+            "durationMs": 134.69387755102042
+          },
+          {
+            "startSample": 14300,
+            "endSample": 15435,
+            "peakRms": 0.09178300013857427,
+            "durationMs": 25.736961451247165
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 30870,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.007920123107528716,
+        "offThresholdRms": 0.003960061553764358,
+        "noiseFloorRms": 4.3475987602657335e-05,
+        "measuredFloorRms": 4.3475987602657335e-05,
+        "edgePeakRms": 0.1989444976968687,
+        "clusters": [
+          {
+            "startSample": 30870,
+            "endSample": 41210,
+            "peakRms": 0.1989444976968687,
+            "durationMs": 234.4671201814059
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 92,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.00652714144311261,
+        "offThresholdRms": 0.003263570721556305,
+        "noiseFloorRms": 3.192433596082209e-05,
+        "measuredFloorRms": 3.192433596082209e-05,
+        "edgePeakRms": 0.1639543802749842,
+        "clusters": [
+          {
+            "startSample": 3080,
+            "endSample": 9460,
+            "peakRms": 0.1639543802749842,
+            "durationMs": 144.67120181405895
+          },
+          {
+            "startSample": 10560,
+            "endSample": 15435,
+            "peakRms": 0.11247041158533651,
+            "durationMs": 110.54421768707483
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 16758,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.05036281537631263,
+        "offThresholdRms": 0.025181407688156316,
+        "noiseFloorRms": 0.012650567259638175,
+        "measuredFloorRms": 0.012650567259638175,
+        "edgePeakRms": 0.21069743012508496,
+        "clusters": [
+          {
+            "startSample": 17198,
+            "endSample": 30398,
+            "peakRms": 0.21069743012508496,
+            "durationMs": 299.31972789115645
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 93,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.009942704630834782,
+        "offThresholdRms": 0.004971352315417391,
+        "noiseFloorRms": 5.5580925800528396e-05,
+        "measuredFloorRms": 5.5580925800528396e-05,
+        "edgePeakRms": 0.24974944854701353,
+        "clusters": [
+          {
+            "startSample": 4400,
+            "endSample": 15435,
+            "peakRms": 0.24974944854701353,
+            "durationMs": 250.22675736961452
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 7497,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.009790626230740652,
+        "offThresholdRms": 0.004895313115370326,
+        "noiseFloorRms": 0.0,
+        "measuredFloorRms": 0.0,
+        "edgePeakRms": 0.24592941184979222,
+        "clusters": [
+          {
+            "startSample": 7497,
+            "endSample": 15857,
+            "peakRms": 0.24592941184979222,
+            "durationMs": 189.56916099773244
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 94,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.08087327540736898,
+        "offThresholdRms": 0.04043663770368449,
+        "noiseFloorRms": 0.020314448316750756,
+        "measuredFloorRms": 0.020314448316750756,
+        "edgePeakRms": 0.18607166862838392,
+        "clusters": [
+          {
+            "startSample": 1540,
+            "endSample": 5280,
+            "peakRms": 0.10816691321805798,
+            "durationMs": 84.80725623582767
+          },
+          {
+            "startSample": 10560,
+            "endSample": 15435,
+            "peakRms": 0.18607166862838392,
+            "durationMs": 110.54421768707483
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 65268,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.002853848463861644,
+        "offThresholdRms": 0.001426924231930822,
+        "noiseFloorRms": 0.0,
+        "measuredFloorRms": 0.0,
+        "edgePeakRms": 0.0716854323395852,
+        "clusters": [
+          {
+            "startSample": 65268,
+            "endSample": 66588,
+            "peakRms": 0.0716854323395852,
+            "durationMs": 29.931972789115648
+          },
+          {
+            "startSample": 80448,
+            "endSample": 80703,
+            "peakRms": 0.011887192014496444,
+            "durationMs": 5.782312925170068
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 95,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.02074039502839944,
+        "offThresholdRms": 0.01037019751419972,
+        "noiseFloorRms": 0.005209751685598531,
+        "measuredFloorRms": 0.005209751685598531,
+        "edgePeakRms": 0.1558811027322274,
+        "clusters": [
+          {
+            "startSample": 0,
+            "endSample": 5280,
+            "peakRms": 0.14890094767838644,
+            "durationMs": 119.72789115646259
+          },
+          {
+            "startSample": 7260,
+            "endSample": 11220,
+            "peakRms": 0.13978760721087535,
+            "durationMs": 89.79591836734694
+          },
+          {
+            "startSample": 12760,
+            "endSample": 15435,
+            "peakRms": 0.1558811027322274,
+            "durationMs": 60.657596371882086
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 36162,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.006429255784819665,
+        "offThresholdRms": 0.0032146278924098325,
+        "noiseFloorRms": 1.3373715533481059e-05,
+        "measuredFloorRms": 1.3373715533481059e-05,
+        "edgePeakRms": 0.16149560370592989,
+        "clusters": [
+          {
+            "startSample": 36162,
+            "endSample": 44522,
+            "peakRms": 0.16149560370592989,
+            "durationMs": 189.56916099773244
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    },
+    {
+      "phrase": 96,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.011590454825630075,
+        "offThresholdRms": 0.005795227412815037,
+        "noiseFloorRms": 0.002911390621152492,
+        "measuredFloorRms": 0.002911390621152492,
+        "edgePeakRms": 0.24238416663462894,
+        "clusters": [
+          {
+            "startSample": 2200,
+            "endSample": 7260,
+            "peakRms": 0.24238416663462894,
+            "durationMs": 114.73922902494331
+          },
+          {
+            "startSample": 8360,
+            "endSample": 15435,
+            "peakRms": 0.17924797586839372,
+            "durationMs": 160.43083900226756
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 29988,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.006253517324533072,
+        "offThresholdRms": 0.003126758662266536,
+        "noiseFloorRms": 4.484205731546468e-06,
+        "measuredFloorRms": 4.484205731546468e-06,
+        "edgePeakRms": 0.15708125316704713,
+        "clusters": [
+          {
+            "startSample": 29988,
+            "endSample": 37468,
+            "peakRms": 0.15708125316704713,
+            "durationMs": 169.61451247165533
+          },
+          {
+            "startSample": 42748,
+            "endSample": 45423,
+            "peakRms": 0.08046838614873361,
+            "durationMs": 60.657596371882086
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": {
+        "type": "TAIL",
+        "fragment": {
+          "startSample": 42748,
+          "endSample": 45423,
+          "peakRms": 0.08046838614873361,
+          "durationMs": 60.657596371882086
+        },
+        "fragmentSourceStart": 106.78934240362811,
+        "fragmentSourceEnd": 106.85,
+        "fragmentDurationMs": 60.657596371882086,
+        "fragmentRelativePeak": 0.5122723719498213,
+        "isolationSilenceMs": 119.72789115646259,
+        "gapSourceStart": 106.66961451247165,
+        "gapSourceEnd": 106.78934240362811,
+        "mainActiveMs": 169.61451247165533,
+        "mainSpanMs": 169.61451247165533,
+        "distanceFromEdgeMs": 0.0,
+        "silenceBeforeFragmentMs": 119.72789115646259,
+        "silenceAfterFragmentMs": 0.0,
+        "proposedCutSample": 4706770,
+        "reasons": []
+      }
+    },
+    {
+      "phrase": 97,
+      "HEAD": {
+        "edge": "HEAD",
+        "offsetSample": 0,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.021547131275333913,
+        "offThresholdRms": 0.010773565637666956,
+        "noiseFloorRms": 0.005412394668846698,
+        "measuredFloorRms": 0.005412394668846698,
+        "edgePeakRms": 0.27622537848307865,
+        "clusters": [
+          {
+            "startSample": 0,
+            "endSample": 4620,
+            "peakRms": 0.17575223012782018,
+            "durationMs": 104.76190476190476
+          },
+          {
+            "startSample": 7040,
+            "endSample": 13640,
+            "peakRms": 0.27622537848307865,
+            "durationMs": 149.65986394557822
+          },
+          {
+            "startSample": 14960,
+            "endSample": 15435,
+            "peakRms": 0.09315579880448271,
+            "durationMs": 10.770975056689343
+          }
+        ]
+      },
+      "TAIL": {
+        "edge": "TAIL",
+        "offsetSample": 23814,
+        "analyzedSamples": 15435,
+        "onThresholdRms": 0.008573759189395682,
+        "offThresholdRms": 0.004286879594697841,
+        "noiseFloorRms": 4.600698006862848e-06,
+        "measuredFloorRms": 4.600698006862848e-06,
+        "edgePeakRms": 0.21536309374873586,
+        "clusters": [
+          {
+            "startSample": 23814,
+            "endSample": 33274,
+            "peakRms": 0.21536309374873586,
+            "durationMs": 214.5124716553288
+          }
+        ]
+      },
+      "headCandidate": null,
+      "tailCandidate": null
+    }
+  ],
+  "limitations": [
+    "Energy morphology cannot establish semantic phoneme ownership. High confidence here means the configured structural pattern plus neighboring-main-speech corroboration, not calibrated acoustic certainty.",
+    "Uncertain, conflicting and post-check-failing proposals retain the exact V4C boundary."
+  ]
+}

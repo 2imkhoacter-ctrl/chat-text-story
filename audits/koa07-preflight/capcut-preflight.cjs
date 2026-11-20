@@ -1,0 +1,12 @@
+const fs=require('fs');const root='D:/ChatTextStory_AI/POC_01';
+const {parsePrompt}=require(root+'/orchestrator/cli.cjs');
+const {readCapcut}=require(root+'/engine/lib/capcut.cjs');
+const {contract:c}=parsePrompt(process.argv[2]);
+const line=new Map(c.creative.script.map(l=>[l.id,l]));
+const events=c.creative.visualEvents.filter(e=>e.type==='VOICE').map(e=>{const l=line.get(e.id);return {...e,clipId:l.clipId||l.id,text:l.spokenText||l.text};});
+const rows=readCapcut({capcut:{draftDirectory:c.sources.capcutDraft},visuals:{events}});
+const bad=rows.filter(r=>r.speaker!==line.get(r.eventId).speaker).map(r=>r.eventId);
+const out=rows.map(r=>({order:r.order,eventId:r.eventId,stableId:r.stableId||r.segmentIds,speaker:r.speaker,capcutText:r.text,displayText:line.get(r.eventId).text,speed:r.speed,gain:r.gain,sourceFile:r.sourceFile,sourceSha256:r.sourceSha256}));
+fs.writeFileSync(process.argv[3],JSON.stringify({count:out.length,speakerMismatch:bad,rows:out},null,2));
+if(out.length!==39||bad.length)throw Error('CAPCUT_PREFLIGHT_FAIL count='+out.length+' speakerMismatch='+bad.join(','));
+console.log('CAPCUT_PREFLIGHT_PASS',out.length);

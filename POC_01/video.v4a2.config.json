@@ -1,0 +1,16 @@
+{
+  "audio": "public/full_tts.mp3.MP3",
+  "script": "data/tts-script.txt",
+  "expectedPhraseCount": 97,
+  "baselineAlignment": "public/generated-audio-v4a1/alignment-manifest.json",
+  "cachedWords": "public/generated-audio-v4a1/whisper-words.json",
+  "generatedAudioDir": "public/generated-audio-v4a2",
+  "timingManifest": "public/generated-audio-v4a2/timing-manifest.json",
+  "phraseHeadPaddingSeconds": 0.03,
+  "phraseTailPaddingSeconds": 0.05,
+  "phrasePauses": {},
+  "matchingEquivalences": [["VC eo", "VCL"]],
+  "minimumLexicalScore": 0.75,
+  "minimumPartitionMargin": 0.4,
+  "maximumZeroHeadRecoverySeconds": 0.75
+}

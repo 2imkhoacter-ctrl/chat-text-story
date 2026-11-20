@@ -1,0 +1,4 @@
+- [Âm lượng nền/nhạc ưa thích](preferred-background-audio-levels.md) — nền game −13,5 dB, nhạc −9,8 dB (gain 0.2113 / 0.3236)
+- [Bàn bạc ≠ yêu cầu sửa](discussion-is-not-an-edit-request.md) — không tự sửa/build khi người dùng chỉ bàn ý kiến; hỏi trước
+- [Bài học build/sửa KOA](koa-build-workflow-lessons.md) — cổng 3000 trống, --no-studio, chép chỉnh tay Inspector, draft CapCut bản sao, zoom phủ khung chat
+- [Gu sáng tạo KOA](koa-creative-preferences.md) — hook khung đầu, zoom emoji bật-rồi-đứng-yên, SFX ảnh gửi đổi theo cảm nhận

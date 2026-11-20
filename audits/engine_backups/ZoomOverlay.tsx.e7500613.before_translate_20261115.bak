@@ -1,0 +1,7 @@
+import React from 'react';
+import {Easing,Img,interpolate,staticFile} from 'remotion';
+
+export const ZoomOverlay=({zoom,event,screen,frame,fps,width,sourceScale,chatVerticalPosition,screenshotX,screenshotY}:any)=>{
+ if(!zoom||zoom.enabled===false||zoom.eventId!==event.id)return null;const local=frame-Math.round(event.timelineStart*fps),easing=zoom.easing==='linear'?Easing.linear:zoom.easing==='ease-in'?Easing.in(Easing.cubic):zoom.easing==='ease-out'?Easing.out(Easing.cubic):Easing.inOut(Easing.cubic),scale=interpolate(local,[zoom.startDelaySeconds*fps,(zoom.startDelaySeconds+zoom.durationSeconds)*fps],[zoom.startScale,zoom.endScale],{easing,extrapolateLeft:'clamp',extrapolateRight:'clamp'});
+ return <div data-zoom-event={zoom.id} style={{position:'absolute',left:(width-screen.width*sourceScale)/2+screenshotX+(zoom.anchorX??0),top:chatVerticalPosition-screen.height*sourceScale/2+screenshotY+(zoom.anchorY??0),width:zoom.crop.width*sourceScale,height:zoom.crop.height*sourceScale,overflow:'hidden',scale,transformOrigin:zoom.transformOrigin??'center center'}}><Img src={staticFile(screen.relativeFile)} style={{position:'absolute',left:-zoom.crop.x*sourceScale,top:-zoom.crop.y*sourceScale,width:screen.width*sourceScale,height:screen.height*sourceScale}}/></div>;
+};

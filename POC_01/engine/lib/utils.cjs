@@ -1,0 +1,14 @@
+const fs=require('fs'),path=require('path'),crypto=require('crypto'),cp=require('child_process');
+const readJson=f=>JSON.parse(fs.readFileSync(f,'utf8'));
+const writeJson=(f,v)=>{fs.mkdirSync(path.dirname(f),{recursive:true});fs.writeFileSync(f,JSON.stringify(v,null,2)+'\n');};
+const hashBuffer=b=>crypto.createHash('sha256').update(b).digest('hex');
+const hashFile=f=>hashBuffer(fs.readFileSync(f));
+const stable=v=>Array.isArray(v)?v.map(stable):v&&typeof v==='object'?Object.fromEntries(Object.keys(v).sort().map(k=>[k,stable(v[k])])):v;
+const fingerprint=v=>hashBuffer(Buffer.from(JSON.stringify(stable(v))));
+const normalize=s=>String(s).normalize('NFC').replace(/\s+/gu,' ').trim();
+const ensure=(condition,message)=>{if(!condition)throw Error(message);};
+const copy=(src,dst)=>{fs.mkdirSync(path.dirname(dst),{recursive:true});if(fs.existsSync(dst)&&hashFile(src)===hashFile(dst))return {skipped:true};if(fs.existsSync(dst)&&(fs.statSync(dst).mode&0o200)===0)throw Error(`Refusing to overwrite read-only asset with different content: ${dst}`);fs.copyFileSync(src,dst);return {skipped:false};};
+const ffmpegPath=()=>path.join(require('@remotion/compositor-win32-x64-msvc').dir,'ffmpeg.exe');
+const ffprobePath=()=>path.join(require('@remotion/compositor-win32-x64-msvc').dir,'ffprobe.exe');
+const execFile=(file,args,options={})=>cp.execFileSync(file,args,{windowsHide:true,maxBuffer:128*1024*1024,...options});
+module.exports={fs,path,readJson,writeJson,hashBuffer,hashFile,fingerprint,normalize,ensure,copy,ffmpegPath,ffprobePath,execFile};

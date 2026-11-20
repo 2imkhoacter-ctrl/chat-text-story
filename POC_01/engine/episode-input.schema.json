@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://chattextstory.local/episode-input.schema.json",
+  "title": "ChatTextStory Generic Engine V1 input",
+  "type": "object",
+  "required": ["version", "episode", "capcut", "audio", "visuals", "background", "sfx", "props", "output"],
+  "properties": {
+    "version": {"const": 1},
+    "episode": {"type": "object", "required": ["id", "compositionId", "title", "width", "height", "fps"], "properties": {"id": {"type": "string", "minLength": 1}, "compositionId": {"type": "string", "pattern": "^[A-Za-z0-9-]+$"}, "title": {"type": "string"}, "width": {"type": "integer", "minimum": 1}, "height": {"type": "integer", "minimum": 1}, "fps": {"type": "number", "exclusiveMinimum": 0}}},
+    "capcut": {"type": "object", "required": ["draftDirectory"], "properties": {"draftDirectory": {"type": "string"}}},
+    "audio": {"type": "object", "required": ["trimPolicy", "timeline"], "properties": {"trimPolicy": {"type": "object", "required": ["binSeconds", "leadingGuardSeconds", "maxTrailingSilenceSeconds"], "properties": {"binSeconds": {"type": "number", "exclusiveMinimum": 0}, "leadingGuardSeconds": {"type": "number", "minimum": 0}, "maxTrailingSilenceSeconds": {"type": "number", "minimum": 0}}}, "trimExceptions": {"type": "array", "items": {"type": "object", "required": ["match", "cutFromEndSeconds"], "properties": {"match": {"type": "object", "minProperties": 1}, "cutFromEndSeconds": {"type": "number", "exclusiveMinimum": 0}}}, "timeline": {"type": "object", "required": ["initialMarginSeconds", "baseGapSeconds", "endMarginSeconds"], "properties": {"initialMarginSeconds": {"type": "number", "minimum": 0}, "baseGapSeconds": {"type": "number", "minimum": 0}, "endMarginSeconds": {"type": "number", "minimum": 0}}}}},
+    "visuals": {"type": "object", "required": ["layoutReference", "screenshots", "events"], "properties": {"layoutReference": {"type": "object"}, "screenshots": {"type": "array", "minItems": 1}, "events": {"type": "array", "minItems": 1, "items": {"type": "object", "properties": {"ttsSegmentIds": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 1}}}}}}},
+    "background": {"type": "object", "required": ["gameplay", "music"], "properties": {"gameplay": {"type": "object"}, "music": {"type": "object"}}},
+    "sfx": {"type": "object", "required": ["assets", "cues"], "properties": {"assets": {"type": "array"}, "cues": {"type": "array"}}},
+    "zoomEvents": {"type": "array", "default": []},
+    "props": {"type": "object", "required": ["defaults", "approved"], "properties": {"defaults": {"type": "object"}, "approved": {"type": "object"}}},
+    "output": {"type": "object", "required": ["directory"], "properties": {"directory": {"type": "string"}}}
+  }
+}

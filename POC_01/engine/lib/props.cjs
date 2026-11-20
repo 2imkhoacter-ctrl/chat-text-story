@@ -1,0 +1,3 @@
+const {path,writeJson}=require('./utils.cjs');
+function makeProps(input,out){const defaults=input.props.defaults,approved=input.props.approved||{};const merged={...defaults,...approved,'Per-Screenshot Y Offset':{...(defaults['Per-Screenshot Y Offset']||{}),...(approved['Per-Screenshot Y Offset']||{})},'Pause After':{...(defaults['Pause After']||{}),...(approved['Pause After']||{})},'Bubble Mask Y':{...(defaults['Bubble Mask Y']||{}),...(approved['Bubble Mask Y']||{})}};writeJson(path.join(out,'presets/default-props.json'),defaults);writeJson(path.join(out,'presets/approved-props.json'),merged);return merged;}
+module.exports={makeProps};

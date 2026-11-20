@@ -1,0 +1,69 @@
+{
+  "version": 1,
+  "approvals": [
+    {
+      "voiceIndex": 11,
+      "eventId": "event-012",
+      "displayText": "Dạ thật",
+      "scriptText": "Dạ thật",
+      "spokenText": "Dạ thật mà",
+      "reason": "User confirmed intentional TTS variations; exact ordered pair reviewed for final integration"
+    },
+    {
+      "voiceIndex": 38,
+      "eventId": "event-041",
+      "displayText": "Dạ nhận rồi anh",
+      "scriptText": "Dạ nhận rồi anh",
+      "spokenText": "Dạ nhận rồi anh ơi",
+      "reason": "User confirmed intentional TTS variations; exact ordered pair reviewed for final integration"
+    },
+    {
+      "voiceIndex": 40,
+      "eventId": "event-043",
+      "displayText": "HAHAHA",
+      "scriptText": "HA HA HA HA",
+      "spokenText": "HA HA HA Ha",
+      "reason": "User confirmed intentional TTS variations; exact ordered pair reviewed for final integration"
+    },
+    {
+      "voiceIndex": 45,
+      "eventId": "event-048",
+      "displayText": "Anh cho em gửi nhờ 2 ô tô trước nhà anh nhé?",
+      "scriptText": "Anh cho em gửi nhờ 2 ô tô trước nhà anh nhé",
+      "spokenText": "Anh cho em gửi nhờ 2 ou tô trước nhà anh nhé",
+      "reason": "User confirmed intentional TTS variations; exact ordered pair reviewed for final integration"
+    },
+    {
+      "voiceIndex": 56,
+      "eventId": "event-059",
+      "displayText": "TIỀN GÌ ANH???",
+      "scriptText": "TIỀN GÌ ANH",
+      "spokenText": "TIỀN GÌ ANH ơi",
+      "reason": "User confirmed intentional TTS variations; exact ordered pair reviewed for final integration"
+    },
+    {
+      "voiceIndex": 65,
+      "eventId": "event-068",
+      "displayText": "Chậu nào nhỉ?",
+      "scriptText": "Chậu nào nhỉ",
+      "spokenText": "Chậu nào thế nhỉ",
+      "reason": "User confirmed intentional TTS variations; exact ordered pair reviewed for final integration"
+    },
+    {
+      "voiceIndex": 68,
+      "eventId": "event-072",
+      "displayText": "ANH GIẤU CÁI BẢNG DƯỚI GỐC CÂY Á???",
+      "scriptText": "ANH GIẤU CÁI BẢNG DƯỚI GỐC CÂY Á",
+      "spokenText": "ANH GIẤU CÁI BẢNG DƯỚI GỐC CÂY luôn á",
+      "reason": "User confirmed intentional TTS variations; exact ordered pair reviewed for final integration"
+    },
+    {
+      "voiceIndex": 90,
+      "eventId": "event-094",
+      "displayText": "Khác gì đuổi khách???",
+      "scriptText": "Khác gì đuổi khách",
+      "spokenText": "Khác gì đuổi khách đâu",
+      "reason": "User confirmed intentional TTS variations; exact ordered pair reviewed for final integration"
+    }
+  ]
+}

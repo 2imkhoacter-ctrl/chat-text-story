@@ -1,0 +1,8 @@
+{
+  "audio": "public/full_tts.mp3.MP3",
+  "script": "data/tts-script.txt",
+  "model": "C:/Users/ADMIN/AppData/Local/Buzz/Buzz/Cache/models/Whisper/large-v2.pt",
+  "language": "vi",
+  "visualMapping": "data/chat-events.json",
+  "edgeWindowMs": 350
+}

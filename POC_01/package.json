@@ -1,0 +1,36 @@
+{
+  "name": "poc_01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "segment": "node scripts/segment-audio.cjs",
+    "segment:v4a": "node scripts/segment-v4a.cjs",
+    "transcribe:v4a1": ".venv-speech\\Scripts\\python.exe -X utf8 scripts/transcribe-v4a1.py",
+    "align:v4a1": ".venv-speech\\Scripts\\python.exe -X utf8 scripts/align-v4a1.py",
+    "finalize:v4a1": "node scripts/finalize-v4a1.cjs",
+    "speech:v4a1": "npm run transcribe:v4a1 && npm run align:v4a1 && npm run finalize:v4a1",
+    "resolve:v4a2": ".venv-speech\\Scripts\\python.exe -X utf8 scripts/resolve-v4a2.py",
+    "finalize:v4a2": "node scripts/finalize-v4a2.cjs",
+    "speech:v4a2": "npm run resolve:v4a2 && npm run finalize:v4a2",
+    "test:v4a2": "node scripts/verify-v4a2.cjs",
+    "test:v4a": "node scripts/verify-v4a.cjs",
+    "render:v4a": "node scripts/render-v4a.cjs",
+    "render": "node scripts/render.cjs",
+    "studio": "remotion studio src/index.jsx"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@remotion/cli": "^4.0.537",
+    "@remotion/media": "4.0.537",
+    "@remotion/media-utils": "4.0.537",
+    "mediabunny": "1.61.6",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "remotion": "^4.0.537",
+    "zod": "4.5.4"
+  }
+}

@@ -1,0 +1,25 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>ChatTextStory — Manual Audio Boundary Nudge</title>
+<style>body{font:16px system-ui;background:#17191e;color:#eee;max-width:1100px;margin:30px auto;padding:0 20px}a{color:#9fc7ff}article{border:1px solid #555;border-radius:8px;padding:16px;margin:14px 0}h2{font-size:19px;margin:0 0 8px}p{margin:8px 0;color:#ccc}button,input{font:inherit;padding:8px;margin:4px;background:#30343e;color:white;border:1px solid #777;border-radius:4px}input{width:100px}button{cursor:pointer}#status{position:sticky;top:0;background:#17191e;padding:12px;min-height:24px}small{color:#bbb}.error{color:#ff9c9c}</style>
+<h1>Manual Audio Boundary Nudge</h1>
+<p><a href="http://localhost:3000/ChatTextStory-V4D-AudioCalibrated" target="_blank">Open V4D in Remotion Studio</a></p>
+<p>Positive = later cut: more audio to the previous phrase, less to the next. Changes save immediately and regenerate only the adjacent V4D WAVs. Studio reloads the updated manifest. Pause After and Normal Gap stay unchanged.</p>
+<small>96 shared cuts. Automatic base searches ±80 ms around alignment; uncertain cuts stay unchanged and are flagged. RESET restores the automatic base. Existing V4C manual corrections are preserved in their own version. V4B remains untouched. Integer milliseconds; applied on the 44,100 Hz sample grid.</small>
+<div id="status" role="status">Loading…</div><main id="boundaries"></main>
+<script>
+let state,busy=false;const status=document.querySelector('#status'),main=document.querySelector('main');
+const fmt=n=>n.toFixed(3),signed=n=>(n>=0?'+':'')+n;
+function render(){main.replaceChildren();for(const b of state.boundaries){
+ const article=document.createElement('article');article.id=b.key;
+ const h=document.createElement('h2');h.textContent='Boundary '+String(b.index).padStart(3,'0');article.append(h);
+ const text=document.createElement('p');text.textContent=`voice_${String(b.index).padStart(3,'0')} → voice_${String(b.index+1).padStart(3,'0')}: ${b.previousText} → ${b.nextText}`;article.append(text);
+ const info=document.createElement('p');info.textContent=`Alignment: ${fmt(b.originalAlignmentBoundary)} s · Auto base: ${fmt(b.original)} s (${signed(Math.round(b.automaticDeltaMs))} ms) · Correction: ${signed(b.correctionMs)} ms · Final boundary: ${fmt(b.final)} s`;article.append(info); const review=document.createElement('small');review.textContent=b.status+(b.reasons.length?' — '+b.reasons.join(', '):'');article.append(review,document.createElement('br'));
+ for(const [label,delta]of[['−50 ms',-50],['−10 ms',-10],['RESET',null],['+10 ms',10],['+50 ms',50]]){const button=document.createElement('button');button.textContent=label;button.setAttribute('aria-label',`Boundary ${b.index} ${label}`);button.onclick=()=>save(b.index,delta===null?0:b.correctionMs+delta);article.append(button);}
+ const input=document.createElement('input');input.type='number';input.step='1';input.value=b.correctionMs;input.setAttribute('aria-label',`Boundary ${b.index} correction milliseconds`);article.append(input);
+ const apply=document.createElement('button');apply.textContent='Apply ms';apply.onclick=()=>save(b.index,Number(input.value));article.append(apply);
+ main.append(article);
+}}
+async function save(index,ms){if(busy)return;if(!Number.isSafeInteger(ms)){status.textContent='Enter whole milliseconds.';return;}busy=true;document.querySelectorAll('button,input').forEach(e=>e.disabled=true);status.className='';status.textContent='Regenerating adjacent clips…';
+ try{const response=await fetch('/api/boundary',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({index,correctionMs:ms})});const result=await response.json();if(!response.ok)throw Error(result.error);state=result.state;render();status.textContent=`Saved Boundary ${index}: ${signed(ms)} ms. `+result.affected.map(p=>`${p.voice}: ${fmt(p.sourceStart)}–${fmt(p.sourceEnd)} s`).join(' · ');}
+ catch(e){status.className='error';status.textContent=e.message;}finally{busy=false;document.querySelectorAll('button,input').forEach(e=>e.disabled=false);}}
+fetch('/api/state').then(r=>r.json()).then(s=>{state=s;render();status.textContent='Ready — 96 boundary controls. Corrections are stored separately from alignment.';}).catch(e=>{status.textContent=e.message;});
+</script></html>
